@@ -2,7 +2,6 @@
 
 int main()
 {
-    cout << "Hello, programming!\n";
-    cout << "Here we go!";
+    cout << "Hello, programming!\n Here we go!";
     return 0;
 }
