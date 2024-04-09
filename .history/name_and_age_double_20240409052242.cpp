@@ -9,6 +9,12 @@ int main()
     string first_name;
     double age; 
     cin >> first_name >> age; // read into first name and age: user puts in years.
-    cout << "Hello, " << first_name << " (Age: " << age << " years old).\n";
+
+    // error handling
+    if (cin.fail()) {
+        cout << "Invalid input for age. Please enter a numeric value.\n";
+        return 1; // exit the program with error status
+    }
+    cout << "Hello, " << first_name << " (Age: " << age << "years old).\n";
     return 0;
 } 

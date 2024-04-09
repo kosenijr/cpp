@@ -9,6 +9,6 @@ int main()
     string first_name;
     double age; 
     cin >> first_name >> age; // read into first name and age: user puts in years.
-    cout << "Hello, " << first_name << " (Age: " << age << " years old).\n";
+    cout << "Hello, " << first_name << " (Age: " << age << " months old).\n";
     return 0;
 } 
