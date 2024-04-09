@@ -9,6 +9,6 @@ int main()
     int age; 
     cin >> first_name;
     cin >> age;
-    cout << "Hello, " << first_name << " (Age: " << age << " years old).\n";
+    cout << "Hello, " << first_name << " (Age " << age << ").\n";
     return 0;
 } 
