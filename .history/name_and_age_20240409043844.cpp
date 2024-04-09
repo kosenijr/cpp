@@ -8,6 +8,5 @@ int main()
     string first;
     string second;
     cin >> first >> second; // read two strings
-    cout << "Hello, " << first << " " << second << "!\n";
-    return 0;
+    cout << "Hello, " << first << " " << second << '!\n';
 }
