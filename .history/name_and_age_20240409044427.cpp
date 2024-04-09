@@ -10,4 +10,4 @@ int main()
     cin >> first >> second; // read two strings
     cout << "Hello, " << first << " " << second << "!\n";
     return 0;
-} 
+}
