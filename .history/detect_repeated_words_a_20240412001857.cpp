@@ -13,5 +13,3 @@ int main()
         previous = current;
     }
 }
-
-// input: She she lauged He He He because what he did did not look look very very good good.

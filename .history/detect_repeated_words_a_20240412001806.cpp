@@ -11,7 +11,7 @@ int main()
         if (previous == current)
             cout << "repeated word: " << current << '\n';
         previous = current;
+    } esle {
+        cout << "Non-repeated word: " << current << '\n';
     }
 }
-
-// input: She she lauged He He He because what he did did not look look very very good good.
