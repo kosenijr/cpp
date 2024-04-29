@@ -14,7 +14,4 @@ int main()
     }
 }
 
-// input: The cat cat jumped.
-
-// output:
-// repeated word: cat
+// input: She she laughed He He He because what he did did not look look very very good good.

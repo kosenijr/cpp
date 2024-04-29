@@ -14,7 +14,12 @@ int main()
     }
 }
 
-// input: The cat cat jumped.
+// input: She she laughed He He He because what he did did not look look very very good good.
 
 // output:
-// repeated word: cat
+// repeated word: He
+// repeated word: He
+// repeated word: did
+// repeated word: look
+// repeated word: very
+// repeated word: good
