@@ -4,7 +4,7 @@ int main()
 {
     double x = {2.7}; // OK
     double y {x}; // error: double -> int might narrow
-    char a {0}; // OK
+    char a {-128}; // OK
     char b {a}; // error: int -> char might narrow
     // When the initializer is an integer literal, the compiler can check the actual value and accept values that do not imply narrowing
 
