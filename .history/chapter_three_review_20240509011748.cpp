@@ -7,6 +7,8 @@ int main()
     string first_name;
     string friend_name;
     char friend_sex = 0;
+    string y = "y";
+    char friend = y;
     // inputs
     cout << "Enter the name of the person you want to write to: \n";
     cin >> first_name;
@@ -27,7 +29,7 @@ int main()
     }
     if (friend_sex == "f")
     {
-        cout << "How is she doing? If you see " << friend_name << " again, please let him know that I asked of him. \n";
+        cout << "How is she doing? If you see " << friend_name << " again, please let him know that I asked of him. \n;"
     };
     return 0;
 }

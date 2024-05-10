@@ -7,6 +7,7 @@ int main()
     string first_name;
     string friend_name;
     char friend_sex = 0;
+    char friend_now = 'y';
     // inputs
     cout << "Enter the name of the person you want to write to: \n";
     cin >> first_name;
