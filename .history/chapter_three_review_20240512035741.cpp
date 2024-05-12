@@ -30,6 +30,5 @@ int main()
     {
         cout << "How is she doing? If you see " << friend_name << " again, please let her know that I asked of her! \n";
     };
-    
     return 0;
 }
