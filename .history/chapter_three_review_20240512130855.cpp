@@ -37,7 +37,7 @@ int main()
     if (110 >= age >= 0)
     {
         simple_error("you're kidding!");
-        cout << "No way ... blessings!" << "\n"; 
+        cout << "No way, blessings!" << "\n"; 
     }
     if (age < 12)
     {

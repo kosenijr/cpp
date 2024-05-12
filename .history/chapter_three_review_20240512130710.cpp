@@ -34,10 +34,10 @@ int main()
         cout << "If you see " << friend_name << " again, please ask her to call me! \n";
     };
     cout << "I hear you just had a birthday and you are " << age << " years old. \n";
-    if (110 >= age >= 0)
+    if (0 >= age >= 110)
     {
+        cout << "No way, blessings!" << "\n"; 
         simple_error("you're kidding!");
-        cout << "No way ... blessings!" << "\n"; 
     }
     if (age < 12)
     {

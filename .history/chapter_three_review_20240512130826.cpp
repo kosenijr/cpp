@@ -36,8 +36,8 @@ int main()
     cout << "I hear you just had a birthday and you are " << age << " years old. \n";
     if (110 >= age >= 0)
     {
-        simple_error("you're kidding!");
-        cout << "No way ... blessings!" << "\n"; 
+        cout << "No way, blessings!" << "\n"; 
+        // simple_error("you're kidding!");
     }
     if (age < 12)
     {
