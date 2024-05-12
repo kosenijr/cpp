@@ -24,11 +24,11 @@ int main()
     cout << "By the way, I wanted to ask you about " << friend_name << ". \n";
     if (friend_sex == 'm') // single quotes for char; double for string
     {
-        cout << "How is he doing? If you see " << friend_name << " again, please ask him know to call me! \n";
+        cout << "How is he doing? If you see " << friend_name << " again, please let him know to call me! \n";
     }
  if (friend_sex == 'f')
     {
-        cout << "How is she doing? If you see " << friend_name << " again, please ask her know to call me! \n";
+        cout << "How is she doing? If you see " << friend_name << " again, please let her know to call me! \n";
     };
     
     return 0;
