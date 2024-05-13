@@ -21,10 +21,10 @@ int main()
 
     // outputs
     cout << "Dear " << first_name << ", \n";
-    cout << "  How are you? I am fine. I miss you. " // indented as requested.
+    cout << "  How are you? I am fine. I miss you. "
          << "Remember that party we attended with " << friend_name << "? \n"
-         << "Yeah ... I will never forget it. We all should have got together after that event! \n";
-    cout << "  By the way, how is " << friend_name << " doing these days? \n"; // indented here as well.
+         << "Yeah ... I will never forget it. We should have got together after that event! \n";
+    cout << "  By the way, how is " << friend_name << " doing these days? \n";
     if (friend_sex == 'm') // single quotes for char; double for string
     {
         cout <<"If you see " << friend_name << " again, please ask him to call me! \n";

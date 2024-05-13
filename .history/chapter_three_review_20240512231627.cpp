@@ -23,7 +23,7 @@ int main()
     cout << "Dear " << first_name << ", \n";
     cout << "  How are you? I am fine. I miss you. " // indented as requested.
          << "Remember that party we attended with " << friend_name << "? \n"
-         << "Yeah ... I will never forget it. We all should have got together after that event! \n";
+         << "Yeah ... I will never forget it. We should have got together after that event! \n";
     cout << "  By the way, how is " << friend_name << " doing these days? \n"; // indented here as well.
     if (friend_sex == 'm') // single quotes for char; double for string
     {
@@ -33,7 +33,7 @@ int main()
     {
         cout << "If you see " << friend_name << " again, please ask her to call me! \n";
     };
-    cout << "I hear you just had a birthday and you are " << age << " years old. \n";
+    cout << "I hear you just had a birthday and you are " << age << " years old. \n\n";
     if (age <= 0 || age >= 110)
     {
         simple_error("you're kidding!"); // terminates program;

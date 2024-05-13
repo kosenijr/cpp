@@ -21,10 +21,10 @@ int main()
 
     // outputs
     cout << "Dear " << first_name << ", \n";
-    cout << "  How are you? I am fine. I miss you. " // indented as requested.
-         << "Remember that party we attended with " << friend_name << "? \n"
-         << "Yeah ... I will never forget it. We all should have got together after that event! \n";
-    cout << "  By the way, how is " << friend_name << " doing these days? \n"; // indented here as well.
+    cout << "How are you? I am fine. I miss you. "
+         << "Remember that party that we attended with " << friend_name << "? \n"
+         << "Yeah ... I will never forget. We should have got together after that event! \n";
+    cout << "By the way, how is " << friend_name << "? \n";
     if (friend_sex == 'm') // single quotes for char; double for string
     {
         cout <<"If you see " << friend_name << " again, please ask him to call me! \n";
@@ -34,10 +34,9 @@ int main()
         cout << "If you see " << friend_name << " again, please ask her to call me! \n";
     };
     cout << "I hear you just had a birthday and you are " << age << " years old. \n";
-    if (age <= 0 || age >= 110)
+    if (110 >= age >= 0)
     {
-        simple_error("you're kidding!"); // terminates program;
-        return 0; // encouraged by G.
+        simple_error("you're kidding!"); // terminates program
     }
     if (age < 12)
     {
@@ -51,8 +50,8 @@ int main()
     {
         cout << "I hope you are enjoying retirement!" << "\n\n";
     }
-    cout << "Sincerely Yours, \n\n\n"
-         << "Kayode Oseni \n";
+    cout << "  Yours Sincerely, \n\n\n"
+         << "  Kayode Oseni \n";
 
     return 0;
 }
