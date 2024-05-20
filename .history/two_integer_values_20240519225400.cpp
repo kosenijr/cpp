@@ -31,7 +31,7 @@ int main()
             << "The larger number: " << val1 << "\n"
             << "The difference: " << val1 - val2 << "\n"
             << "The product: " << val1 * val2 << "\n"
-            << "The ratio: " << val1_simplified << ":" << val2_simplified << "\n";
+            << "The ratio: " << val2_simplified << ":" << val1_simplified << "\n";
     };
     // return statement
     return 0;

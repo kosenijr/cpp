@@ -10,8 +10,9 @@ int main()
     cin >> val1 >> val2;
     // calculate the greated common denominator
     int divisor = gcd(val1, val2);
-    int val1_simplified = val1 / divisor;
-    int val2_simplified = val2 / divisor;
+    int val1_simplified = val1/divisor;
+    int val2_simplified = val2/divisor;
+    
 
     // manipulations
     // smaller and larger
@@ -28,10 +29,10 @@ int main()
     {
         cout
             << "The smaller number: " << val2 << "\n"
-            << "The larger number: " << val1 << "\n"
-            << "The difference: " << val1 - val2 << "\n"
+            << "The larger number: " << val1 << "\n";
+                        << "The difference: " << val1 - val2 << "\n"
             << "The product: " << val1 * val2 << "\n"
-            << "The ratio: " << val1_simplified << ":" << val2_simplified << "\n";
+            << "The ratio: " << val2_simplified << ":" << val1_simplified << "\n";
     };
     // return statement
     return 0;
