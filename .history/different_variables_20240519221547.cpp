@@ -12,8 +12,8 @@ int main() // main function has a type that will return an integer upon success
     // legal objects
     char last_letter = 'z';
     int first_number = 1;
-    string shaft_character = "Black Hero";
-    double pi_decimal = 3.141592653589793238462643383279502884197;
+    string shaft = "Black Hero";
+    double pi = 3.141592653589793238462643383279502884197;
     bool what_is_love = true;
 
     // result
@@ -27,8 +27,8 @@ int main() // main function has a type that will return an integer upon success
     << "List of legal names: \n"
     << "last_letter: " << last_letter << "\n"
     << "first_number: " << first_number << "\n"
-    << "shaft_character: " << shaft_character << "\n"
-    << "pi_decimal: " << pi_decimal << "\n"
+    << "shaft: " << shaft << "\n"
+    << "pi: " << pi << "\n"
     << "what_is_love: " << what_is_love << "\n";
 
     // return statement
