@@ -20,7 +20,6 @@ int main()
         cout
             << "The smaller number: " << val1 << "\n"
             << "The larger number: " << val2 << "\n"
-            << "The sum: " << val1 + val2 << "\n"
             << "The difference: " << val2 - val1 << "\n"
             << "The product: " << val1 * val2 << "\n";
     }
@@ -29,13 +28,12 @@ int main()
         cout
             << "The smaller number: " << val2 << "\n"
             << "The larger number: " << val1 << "\n"
-            << "The sum: " << val1 + val2 << "\n"
             << "The difference: " << val1 - val2 << "\n"
             << "The product: " << val1 * val2 << "\n";
     };
-
+    
     // ratio
-    cout << "The ratio: " << val1_simplified << ":" << val2_simplified << "\n";
+    << "The ratio: " << val1_simplified << ":" << val2_simplified << "\n";
 
     // return statement
     return 0;
