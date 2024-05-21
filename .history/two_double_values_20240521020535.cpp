@@ -4,12 +4,12 @@ int main()
 {
     // declare two objects with int type
     double val1, val2;
-    // prompting for two integers
-    cout << "Please enter two values that are integers: \n";
+    // prompting for two floating-point values
+    cout << "Please enter two decimal values: \n";
     // read into the two integers, respectively
     cin >> val1 >> val2;
     // calculate the greated common denominator
-    int divisor = gcd(val1, val2);
+    int divisor = gcd( val1, val2);
     int val1_simplified = val1 / divisor;
     int val2_simplified = val2 / divisor;
 
@@ -37,6 +37,8 @@ int main()
     // ratio
     cout << "The ratio: " << val1_simplified << ":" << val2_simplified << "\n";
 
+    //testing
+    cout << val1 << " and " << val2 << "\n";
     // return statement
     return 0;
 }

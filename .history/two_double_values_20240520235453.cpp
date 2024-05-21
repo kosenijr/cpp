@@ -5,7 +5,7 @@ int main()
     // declare two objects with int type
     double val1, val2;
     // prompting for two integers
-    cout << "Please enter two values that are integers: \n";
+    cout << "Please enter two decimal values: \n";
     // read into the two integers, respectively
     cin >> val1 >> val2;
     // calculate the greated common denominator
