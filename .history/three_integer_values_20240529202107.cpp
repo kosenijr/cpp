@@ -27,12 +27,13 @@ int main()
     {
         cout << num2 << ", " << num3 << ", " << num1 << "\n";
     }
-    else if ((num3 <= num1) && (num3 <= num2) && (num1 <= num2))
+    else if ((num3 <= num1) && (num3 <= num2) && (num1 <=  num2))
     {
         cout << num3 << ", " << num1 << ", " << num2 << "\n";
     }
-    else if ((num3 <= num1) && (num3 <= num2) && (num2 <= num1))
+    else if ((num3 <= num1) && (num3 <= num2) && (num2 <=  num1))
     {
         cout << num3 << ", " << num2 << ", " << num1 << "\n";
+    }
     }
 }
