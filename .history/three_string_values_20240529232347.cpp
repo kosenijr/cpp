@@ -27,29 +27,29 @@ int main()
     // cout << compare1 << " " << compare2 << "\n";
 
     // conditionals
-    if ((char1 <= char2) && (char1 <= char3) && (char2 <= char3))
-    {
-        cout << str1 << ", " << str2 << ", " << str3 << "\n";
-    }
-    else if ((char1 <= char2) && (char1 <= char3) && (char3 <= char2))
-    {
-        cout << str1 << ", " << str3 << ", " << str2 << "\n";
-    }
-    else if ((char2 <= char1) && (char2 <= char3) && (char1 <= char3))
-    {
-        cout << str2 << ", " << str1 << ", " << str3 << "\n";
-    }
-    else if ((char2 <= char1) && (char2 <= char3) && (char3 <= char1))
-    {
-        cout << str2 << ", " << str3 << ", " << str1 << "\n";
-    }
-    else if ((char3 <= char1) && (char3 <= char2) && (char1 <= char2))
-    {
-        cout << char3 << ", " << char1 << ", " << char2 << "\n";
-    }
-    else if ((char3 <= char1) && (char3 <= char2) && (char2 <= char1))
-    {
-        cout << char3 << ", " << char2 << ", " << char1 << "\n";
-    };
+    // if ((str1 <= str2) && (str1 <= str3) && (str2 <= str3))
+    // {
+    //     cout << str1 << ", " << str2 << ", " << str3 << "\n";
+    // }
+    // else if ((str1 <= str2) && (str1 <= str3) && (str3 <= str2))
+    // {
+    //     cout << str1 << ", " << str3 << ", " << str2 << "\n";
+    // }
+    // else if ((str2 <= str1) && (str2 <= str3) && (str1 <= str3))
+    // {
+    //     cout << str2 << ", " << str1 << ", " << str3 << "\n";
+    // }
+    // else if ((str2 <= str1) && (str2 <= str3) && (str3 <= str1))
+    // {
+    //     cout << str2 << ", " << str3 << ", " << str1 << "\n";
+    // }
+    // else if ((str3 <= str1) && (str3 <= str2) && (str1 <= str2))
+    // {
+    //     cout << str3 << ", " << str1 << ", " << str2 << "\n";
+    // }
+    // else if ((str3 <= str1) && (str3 <= str2) && (str2 <= str1))
+    // {
+    //     cout << str3 << ", " << str2 << ", " << str1 << "\n";
+    // };
     return 0;
 }
