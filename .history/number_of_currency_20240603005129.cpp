@@ -2,8 +2,6 @@
 
 int main()
 {
-    // Notes: play around with total_in_cents and total_of_coins; utilize setprecision(2); also look for int/double and vice versa conversions.
-
     // declaration of currency objects
     int penny, pennies, nickel, nickels, dime, dimes, quarter, quarters, half_dollar, half_dollars, dollar_coin, dollar_coins, total_in_dollars;
     double total_of_pennies, total_of_nickels, total_of_dimes, total_of_quarters, total_of_half_dollars, total_of_dollar_coins, total_in_cents, total_of_coins;
