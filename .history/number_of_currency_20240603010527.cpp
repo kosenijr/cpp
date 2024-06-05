@@ -97,23 +97,19 @@ int main()
 
     // provide total amount in dollars to standard output stream
     total_in_dollars = total_of_coins / 100;
-    // try using division instead of modulo, then check
-    total_in_cents = total_of_coins / 100;
-    // check
-    cout << "Total in dollars " << total_in_dollars << "\n";
-    cout << "Total in dollars (cents retained): " << fixed << std::setprecision(2) << total_in_cents << "\n";
+    total_in_cents = total_of_coins % 100;
 
     // check output stream
 
-    // if (total_in_cents < 10)
-    // {
+    if (total_in_cents < 10)
+    {
 
-    //     cout << "Total in Dollars: $" << total_in_dollars << "." << total_in_cents << "\n";
-    // }
-    // else
-    // {
-    //     cout << "Total in Dollars: $" << total_in_dollars << "." << total_in_cents << "\n";
-    // }
+        cout << "Total in Dollars: $" << total_in_dollars << ".0" << total_in_cents << "\n";
+    }
+    else
+    {
+        cout << "Total in Dollars: $" << total_in_dollars << "." << total_in_cents << "\n";
+    }
     // return
     return 0;
 }

@@ -5,8 +5,8 @@ int main()
     // Notes: play around with total_in_cents and total_of_coins; utilize setprecision(2); also look for int/double and vice versa conversions.
 
     // declaration of currency objects
-    int penny, pennies, nickel, nickels, dime, dimes, quarter, quarters, half_dollar, half_dollars, dollar_coin, dollar_coins, total_in_dollars;
-    double total_of_pennies, total_of_nickels, total_of_dimes, total_of_quarters, total_of_half_dollars, total_of_dollar_coins, total_in_cents, total_of_coins;
+    int penny, pennies, nickel, nickels, dime, dimes, quarter, quarters, half_dollar, half_dollars, dollar_coin, dollar_coins, total_of_coins, total_in_dollars;
+    double total_of_pennies, total_of_nickels, total_of_dimes, total_of_quarters, total_of_half_dollars, total_of_dollar_coins, total_in_cents;
     // continuously prompt user to provide currency information
     cout << "How many pennies do you have? \n";
     cin >> pennies;
@@ -83,7 +83,7 @@ int main()
     total_of_quarters = quarters * 0.25;
     total_of_half_dollars = half_dollars * 0.50;
     total_of_dollar_coins = dollar_coins * 1.00;
-    total_of_coins = (total_of_pennies + total_of_nickels + total_of_dimes + total_of_quarters + total_of_half_dollars + total_of_dollar_coins) * 100;
+    total_of_coins = (total_of_pennies + total_of_nickels + total_of_dimes + total_of_quarters + total_of_half_dollars + total_of_dollar_coins);
 
     // check output stream
     cout << "Pennies: " << total_of_pennies << "\n";
@@ -97,23 +97,19 @@ int main()
 
     // provide total amount in dollars to standard output stream
     total_in_dollars = total_of_coins / 100;
-    // try using division instead of modulo, then check
-    total_in_cents = total_of_coins / 100;
-    // check
-    cout << "Total in dollars " << total_in_dollars << "\n";
-    cout << "Total in dollars (cents retained): " << fixed << std::setprecision(2) << total_in_cents << "\n";
+    total_in_cents = total_of_coins % 100;
 
     // check output stream
 
-    // if (total_in_cents < 10)
-    // {
+    if (total_in_cents < 10)
+    {
 
-    //     cout << "Total in Dollars: $" << total_in_dollars << "." << total_in_cents << "\n";
-    // }
-    // else
-    // {
-    //     cout << "Total in Dollars: $" << total_in_dollars << "." << total_in_cents << "\n";
-    // }
+        cout << "Total in Dollars: $" << total_in_dollars << ".0" << total_in_cents << "\n";
+    }
+    else
+    {
+        cout << "Total in Dollars: $" << total_in_dollars << "." << total_in_cents << "\n";
+    }
     // return
     return 0;
 }
