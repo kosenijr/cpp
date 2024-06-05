@@ -93,10 +93,8 @@ int main()
     cout << "Half Dollars: " << total_of_half_dollars << "\n";
     cout << "Dollar Coins: " << total_of_dollar_coins << "\n";
     cout << "Total Coins: " << total_of_coins << "\n";
-
     // provide total amount in dollars to standard output stream
     total_in_dollars = total_of_coins / 100;
-
     // check output stream
     cout << "Total in dollars (cents retained): $" << fixed << std::setprecision(2) << total_in_dollars << "\n";
 
