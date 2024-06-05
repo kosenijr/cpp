@@ -86,21 +86,19 @@ int main()
     total_of_coins = (total_of_pennies + total_of_nickels + total_of_dimes + total_of_quarters + total_of_half_dollars + total_of_dollar_coins) * 100;
 
     // check output stream
-    // cout << "Pennies: " << total_of_pennies << "\n";
-    // cout << "Nickels: " << total_of_nickels << "\n";
-    // cout << "Dimes: " << total_of_dimes << "\n";
-    // cout << "Quarters: " << total_of_quarters << "\n";
-    // cout << "Half Dollars: " << total_of_half_dollars << "\n";
-    // cout << "Dollar Coins: " << total_of_dollar_coins << "\n";
-
-    // provide amount in coins
+    cout << "Pennies: " << total_of_pennies << "\n";
+    cout << "Nickels: " << total_of_nickels << "\n";
+    cout << "Dimes: " << total_of_dimes << "\n";
+    cout << "Quarters: " << total_of_quarters << "\n";
+    cout << "Half Dollars: " << total_of_half_dollars << "\n";
+    cout << "Dollar Coins: " << total_of_dollar_coins << "\n";
     cout << "The value of all of your coins is " << total_of_coins << " cents. \n";
 
     // provide total amount in dollars to standard output stream
     total_in_dollars = total_of_coins / 100;
 
-    // provide amount in dollars
-    cout << "The value of all of your coins in dollars is $" << fixed << std::setprecision(2) << total_in_dollars << ". \n";
+    // check output stream
+    cout << "Total in dollars (cents retained): $" << fixed << std::setprecision(2) << total_in_dollars << "\n";
 
     // return
     return 0;
