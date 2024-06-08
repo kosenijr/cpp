@@ -8,21 +8,21 @@ int use(int n) // void indicates that this function does not return a value
 {
     // created a constant variable whose value is determined at runtime
     const int abcUpdated = abc + n;
-    // cout << abcUpdated << "\n"; // similar to logging the info; can prepare for return below.
-    return abcUpdated; // returned the const that is an integer in type; this agrees with the function-type.
+    cout << abcUpdated << "\n";
+    return 0;
 };
 
 int main()
 {
-    cout << "The constant expression: " << abc << "\n"; // provides me with the value of the constant expression at the beginning.
-    use(8);              // call the use function with an argument of 8.
-    use(10);             // call the use function with an argument of 10.
-    use(12);             // call the use function with an argument of 12.
+    cout << abc << "\n"; // provides me with the value of the constant expression at the beginning.
+    use(8);              // Call the 'use' function with an argument of 8; outputs 325 (317 + 8)
+    use(10);             // Call the 'use' function with an argument of 10; outputs 327 (317 + 10).
+    use(12);             // Call the 'use' function with an argument of 12; outputs 329 (317 + 12).
 
     // assignments
-    int eight = use(8);
-    int ten = use(10);
-    int twelve = use(12);
+    const int eight = use(8);
+    const int ten = use(10);
+    const int twelve = use(12);
 
     // output stream
     cout << "Constant expression plus 8: " << eight << "\n";

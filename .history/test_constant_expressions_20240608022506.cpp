@@ -14,10 +14,10 @@ int use(int n) // void indicates that this function does not return a value
 
 int main()
 {
-    cout << "The constant expression: " << abc << "\n"; // provides me with the value of the constant expression at the beginning.
-    use(8);              // call the use function with an argument of 8.
-    use(10);             // call the use function with an argument of 10.
-    use(12);             // call the use function with an argument of 12.
+    cout << abc << "\n"; // provides me with the value of the constant expression at the beginning.
+    use(8);              // Call the 'use' function with an argument of 8; outputs 325 (317 + 8)
+    use(10);             // Call the 'use' function with an argument of 10; outputs 327 (317 + 10).
+    use(12);             // Call the 'use' function with an argument of 12; outputs 329 (317 + 12).
 
     // assignments
     int eight = use(8);
