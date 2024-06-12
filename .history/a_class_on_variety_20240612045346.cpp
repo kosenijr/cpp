@@ -25,23 +25,23 @@ public:
         var5 = e;
         var6 = f;
         var7 = g;
+    };
+
+    // make main function
+    int main()
+    {
+        // create an object from Variety class
+        Variety obj_of_vars(8, 9.34586, "Muni Long", 'a', 8.4568, true, 5);
+        cout 
+        << "var1: "<< obj_of_vars.var1<< "\n" 
+        << "var2: "<< obj_of_vars.var2<< "\n" 
+        << "var3: "<< obj_of_vars.var3<< "\n" 
+        << "var4: "<< obj_of_vars.var4<< "\n" 
+        << "var5: "<< obj_of_vars.var5<< "\n" 
+        << "var6: "<< obj_of_vars.var6<< "\n" 
+        << "var7: "<< obj_of_vars.var7<< "\n";
+
+        // return statement
+        return 0;
     }
-};
-
-// make main function
-int main()
-{
-    // create an object from Variety class
-    Variety obj_of_vars(8, 9.34586, "Muni Long", 'a', 8.4568, true, 5);
-    cout
-        << "var1: " << obj_of_vars.var1 << "\n"
-        << "var2: " << obj_of_vars.var2 << "\n"
-        << "var3: " << obj_of_vars.var3 << "\n"
-        << "var4: " << obj_of_vars.var4 << "\n"
-        << "var5: " << obj_of_vars.var5 << "\n"
-        << "var6: " << obj_of_vars.var6 << "\n"
-        << "var7: " << obj_of_vars.var7 << "\n";
-
-    // return statement
-    return 0;
 };

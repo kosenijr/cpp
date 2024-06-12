@@ -44,4 +44,6 @@ int main()
 
     // return statement
     return 0;
-};
+}
+}
+;

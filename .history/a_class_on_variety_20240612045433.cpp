@@ -25,7 +25,7 @@ public:
         var5 = e;
         var6 = f;
         var7 = g;
-    }
+    };
 };
 
 // make main function
@@ -44,4 +44,6 @@ int main()
 
     // return statement
     return 0;
-};
+}
+}
+;
