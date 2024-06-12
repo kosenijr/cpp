@@ -27,7 +27,7 @@ int main()
 	char unit = ' ';
 
 	// prompt user for currency input
-	cout << "Please enter the amount (X) and the symbol you'd like exchanged (Xn - naira, Xy - yen, Xk - kroner, Xp - pounds) for dollars: \n";
+	cout << "Please enter the amount (X) and the symbol you'd like exchanged (Xy - yen, Xk - kroner, Xp - pounds) for dollars: \n";
 
 	// read into standard output stream
 	cin >> amount_input >> unit;

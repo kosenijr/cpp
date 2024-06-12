@@ -27,7 +27,7 @@ int main()
 	char unit = ' ';
 
 	// prompt user for currency input
-	cout << "Please enter the amount (X) and the symbol you'd like exchanged (Xn - naira, Xy - yen, Xk - kroner, Xp - pounds) for dollars: \n";
+	cout << "Please enter the amount (X) and the symbol you'd like exchanged (Xy - yen, Xk - kroner, Xp - pounds) for dollars: \n";
 
 	// read into standard output stream
 	cin >> amount_input >> unit;
@@ -37,7 +37,7 @@ int main()
 
 	// conditional
 	if (unit == 'n')
-	{
+	
 		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " naira, is " << fixed << setprecision(2) << amount_input * rate_per_dollar.naira << " in dollars. \n";
 	}
 	else if (unit == 'y')
