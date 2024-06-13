@@ -11,5 +11,9 @@ int main() {
         // initialize object for user input
         double amount_input = 1;
         char unit = ' ';
+    // user prompt
+    cout 
+    << "Please enter the currency amount for conversion to dollars based on our conversion options: \n:"
+    << "(Xn - Naira, Xy - Yen, Xk - Kroner, Xp - Pounds) for dollars: \n";
 
 }
