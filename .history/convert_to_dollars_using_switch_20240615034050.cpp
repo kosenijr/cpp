@@ -4,12 +4,12 @@ int main()
 {
     // variables
     // constants
-    constexpr double naira_per_dollar = 1495.50;
-    constexpr double kroner_per_dollar = 10.68;
-    constexpr double yuan_per_dollar = 7.2552;
+    constexpr naira_per_dollar = 1495.50;
+    constexpr kroner_per_dollar = 10.68;
+    constexpr yuan_per_dollar = 7.2552;
     // non-constants
-    double amount_input = 0.00;
-    char unit = ' ';
+    double amount_input;
+    char unit;
 
     // prompt user for conversion
     cout << "Please enter an amount that you want converted with one of the following units (n - Naira, k - Kroner, y - Yuan): \n";
