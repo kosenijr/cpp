@@ -40,19 +40,19 @@ int main()
 	// conditional
 	if (unit == 'n')
 	{
-		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " naira, is " << fixed << setprecision(2) << amount_input / rate_per_dollar.naira << " in dollars. \n";
+		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " naira, is " << fixed << setprecision(2) << amount_input * rate_per_dollar.naira << " in dollars. \n";
 	}
 	else if (unit == 'y')
 	{
-		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " yen, is " << fixed << setprecision(2) << amount_input / rate_per_dollar.yen << " in dollars. \n";
+		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " yen, is " << fixed << setprecision(2) << amount_input * rate_per_dollar.yen << " in dollars. \n";
 	}
 	else if (unit == 'k')
 	{
-		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " kroner, is " << fixed << setprecision(2) << amount_input / rate_per_dollar.kroner << " in dollars. \n";
+		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " kroner, is " << fixed << setprecision(2) << amount_input * rate_per_dollar.kroner << " in dollars. \n";
 	}
 	else if (unit == 'p')
 	{
-		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " pounds, is " << fixed << setprecision(2) << amount_input / rate_per_dollar.pounds << " in dollars. \n";
+		cout << "Your amount of " << fixed << setprecision(2) << amount_input << " pounds, is " << fixed << setprecision(2) << amount_input * rate_per_dollar.pounds << " in dollars. \n";
 	}
 	else
 	{
