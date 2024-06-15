@@ -9,7 +9,7 @@ enum Currency // "Currency" is now a type.
 };
 
 // add function w/ switch for currency rates
-double get_conversion_rate(Currency currency)
+double get_currency_rates(Currency currency)
 {
     // use switch
     switch (currency)
@@ -30,7 +30,7 @@ double get_conversion_rate(Currency currency)
 }
 
 // change char to their respective currency
-Currency char_to_currency(char unit)
+char char_to_character(char unit)
 {
     // use switch
     switch (unit)
@@ -52,5 +52,5 @@ Currency char_to_currency(char unit)
 
 int main()
 {
-
+    cout << yuan << "\n";
 }
