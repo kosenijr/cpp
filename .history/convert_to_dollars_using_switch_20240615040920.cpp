@@ -1,0 +1,37 @@
+#include "std_lib_facilities.h"
+
+int main()
+{
+    // variables
+    // constants
+    constexpr double naira_per_dollar = 1495.50;
+    constexpr double kroner_per_dollar = 10.68;
+    constexpr double yuan_per_dollar = 7.2552;
+    // non-constants
+    double amount_input = 0.00;
+    char unit = ' ';
+
+    // prompt user for conversion
+    cout << "Please enter an amount that you want converted with one of the following units (n - Naira, k - Kroner, y - Yuan): \n";
+    // read into object for input;
+    cin >> amount_input >> unit;
+
+    // switch statement
+    switch (unit)
+    {
+    case 'n':
+        cout << "Your amount of " << fixed << setprecision(2) << amount_input << " naira, is " << fixed << setprecision(2) << amount_input / naira_per_dollar << " in dollars. \n";
+        break; // do not forget to break after every case action.
+    case 'k':
+        cout << "Your amount of " << fixed << setprecision(2) << amount_input << " kroner, is " << fixed << setprecision(2) << amount_input / kroner_per_dollar << " in dollars. \n";
+        break; // do not forget to break after every case action.
+    case 'y':
+        cout << "Your amount of " << fixed << setprecision(2) << amount_input << " yuan, is " << fixed << setprecision(2) << amount_input / yuan_per_dollar << " in dollars. \n";
+        break; // do not forget to break after every case action.
+    default:   // do not forget default statement
+        cout << "That option is not a currency in the system. \n";
+        break; // do not forget to break after every case action.
+    };
+    // return statement
+    return 0;
+}
