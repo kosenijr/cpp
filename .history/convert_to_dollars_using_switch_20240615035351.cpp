@@ -24,13 +24,13 @@ int main()
         break; // do not forget to break after every case action.
     case 'k':
         cout << "Your amount of " << fixed << setprecision(2) << amount_input << " kroner, is " << fixed << setprecision(2) << amount_input / kroner_per_dollar << " in dollars. \n";
-        break; // do not forget to break after every case action.
+        break;
     case 'y':
         cout << "Your amount of " << fixed << setprecision(2) << amount_input << " yuan, is " << fixed << setprecision(2) << amount_input / yuan_per_dollar << " in dollars. \n";
-        break; // do not forget to break after every case action.
-    default:   // do not forget default statement
+        break;
+    default: // do not forget default statement
         cout << "That option is not a currency in the system. \n";
-        break; // do not forget to break after every case action.
+        break;
     };
     // return statement
     return 0;
