@@ -8,27 +8,6 @@ enum Currency // "Currency" is now a type.
     null
 };
 
-// change char to their respective currency
-Currency char_to_currency(char unit)
-{
-    // use switch
-    switch (unit)
-    {
-    case 'n':
-        return naira;
-        break;
-    case 'k':
-        return kroner;
-        break;
-    case 'y':
-        return yuan;
-        break;
-    default:
-        return null;
-        break;
-    }
-}
-
 // add function w/ switch for currency rates
 double get_conversion_rate(Currency currency)
 {
@@ -46,6 +25,27 @@ double get_conversion_rate(Currency currency)
         break;
     default:
         return 0.00;
+        break;
+    }
+}
+
+// change char to their respective currency
+Currency char_to_currency(char unit)
+{
+    // use switch
+    switch (unit)
+    {
+    case 'n':
+        return naira;
+        break;
+    case 'k':
+        return kroner;
+        break;
+    case 'y':
+        return yuan;
+        break;
+    default:
+        return null;
         break;
     }
 }
@@ -71,6 +71,6 @@ int main()
     }
     else
     {
-        cout << "The selected amount of " << amount_input << " " << char_to_currency(unit) << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
+        cout << "The selected amount of " << amount_input << " " << currency_unit << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
     }
 }

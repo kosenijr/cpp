@@ -71,6 +71,6 @@ int main()
     }
     else
     {
-        cout << "The selected amount of " << amount_input << " " << char_to_currency(unit) << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
+        cout << "The selected amount of " << amount_input << " " << currency_unit << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
     }
 }
