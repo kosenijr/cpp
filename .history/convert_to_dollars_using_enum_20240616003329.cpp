@@ -1,12 +1,11 @@
 #include "std_lib_facilities.h"
-
 // add enum for currency names
 enum Currency // "Currency" is now a type.
 {
     naira,
     kroner,
     yuan,
-    invalid
+    null
 };
 
 // add function w/ switch for currency rates
@@ -46,26 +45,7 @@ Currency char_to_currency(char unit)
         return yuan;
         break;
     default:
-        return invalid;
-        break;
-    }
-}
-
-string currency_to_string(Currency currency)
-{
-    switch (currency)
-    {
-    case naira:
-        return "naira";
-        break;
-    case kroner:
-        return "kroner";
-        break;
-    case yuan:
-        return "yuan";
-        break;
-    default:
-        return "invalid";
+        return null;
         break;
     }
 }
@@ -74,7 +54,7 @@ int main()
 {
     // variables
     double amount_input = 0.00;
-    char unit = ' ';
+    char unit = 'a';
     // prompting of user
     cout << "Please enter an amount and one of the following units for conversion to dollars (n - Naira, k - Kroner, y - Yuan): \n";
     // read into objects
@@ -84,15 +64,14 @@ int main()
     Currency currency = char_to_currency(unit);
     // rate
     double conversion_rate = get_conversion_rate(currency);
-    string conversion_unit = currency_to_string(currency);
     // conditionals
-    if (currency == invalid || conversion_rate == 0.00)
+    if (currency == null || conversion_rate == 0.00)
     {
         cout << "The unit selected is not known within our system. \n";
     }
     else
     {
-        cout << "The selected amount of " << fixed << setprecision(2) << amount_input << " " << conversion_unit << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
+        cout << "The selected amount of " << amount_input << " " << unit << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
     };
     // return statement
     return 0;

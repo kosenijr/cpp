@@ -1,13 +1,33 @@
 #include "std_lib_facilities.h"
-
 // add enum for currency names
 enum Currency // "Currency" is now a type.
 {
     naira,
     kroner,
     yuan,
-    invalid
+    null
 };
+
+// change char to their respective currency
+Currency char_to_currency(char unit)
+{
+    // use switch
+    switch (unit)
+    {
+    case 'n':
+        return naira;
+        break;
+    case 'k':
+        return kroner;
+        break;
+    case 'y':
+        return yuan;
+        break;
+    default:
+        return null;
+        break;
+    }
+}
 
 // add function w/ switch for currency rates
 double get_conversion_rate(Currency currency)
@@ -30,70 +50,27 @@ double get_conversion_rate(Currency currency)
     }
 }
 
-// change char to their respective currency
-Currency char_to_currency(char unit)
-{
-    // use switch
-    switch (unit)
-    {
-    case 'n':
-        return naira;
-        break;
-    case 'k':
-        return kroner;
-        break;
-    case 'y':
-        return yuan;
-        break;
-    default:
-        return invalid;
-        break;
-    }
-}
-
-string currency_to_string(Currency currency)
-{
-    switch (currency)
-    {
-    case naira:
-        return "naira";
-        break;
-    case kroner:
-        return "kroner";
-        break;
-    case yuan:
-        return "yuan";
-        break;
-    default:
-        return "invalid";
-        break;
-    }
-}
-
 int main()
 {
     // variables
-    double amount_input = 0.00;
-    char unit = ' ';
+   double amount_input = 0.00;
+    char unit_input = ' ';
     // prompting of user
     cout << "Please enter an amount and one of the following units for conversion to dollars (n - Naira, k - Kroner, y - Yuan): \n";
     // read into objects
     cin >> amount_input >> unit; // receiving a double and a unit
     // call functions
     // unit (utilize enum-type:Currency)
-    Currency currency = char_to_currency(unit);
+    Currency currency = char_to_currency(unit_input);
     // rate
     double conversion_rate = get_conversion_rate(currency);
-    string conversion_unit = currency_to_string(currency);
     // conditionals
-    if (currency == invalid || conversion_rate == 0.00)
+    if (currency == null || conversion_rate == 0.00)
     {
         cout << "The unit selected is not known within our system. \n";
     }
     else
     {
-        cout << "The selected amount of " << fixed << setprecision(2) << amount_input << " " << conversion_unit << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
-    };
-    // return statement
-    return 0;
+        cout << "The selected amount of " << amount_input << " " << unit << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
+    }
 }

@@ -84,7 +84,6 @@ int main()
     Currency currency = char_to_currency(unit);
     // rate
     double conversion_rate = get_conversion_rate(currency);
-    string conversion_unit = currency_to_string(currency);
     // conditionals
     if (currency == invalid || conversion_rate == 0.00)
     {
@@ -92,7 +91,7 @@ int main()
     }
     else
     {
-        cout << "The selected amount of " << fixed << setprecision(2) << amount_input << " " << conversion_unit << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
+        cout << "The selected amount of " << amount_input << " " << unit << " is " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
     };
     // return statement
     return 0;
