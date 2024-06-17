@@ -128,8 +128,3 @@ string currency_to_string(Note currency)
         break;
     }
 }
-
-// main function
-int main() {
-    
-}
