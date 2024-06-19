@@ -20,6 +20,6 @@ int main() {
 
     // condition
 
+
     // return statement
-    return 0;
 }
