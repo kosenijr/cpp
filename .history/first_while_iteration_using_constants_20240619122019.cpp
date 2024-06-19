@@ -15,5 +15,3 @@ int main()
     };
     return 0; 
 }
-
-// learned: char('a' + int-typed object) will iterate through the alphabet.

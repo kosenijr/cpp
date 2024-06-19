@@ -3,17 +3,15 @@
 int main()
 {
     // initializations
-    int i = 0; // no constant reinforcement; needs mobility.
+    int i = 0;
     constexpr int j = 97; // need j to stay in place.
     // while statement
-    while (i < 26) // i is our iterator.
+    while (i < 26)
     {
         // message to standard output stream
         cout << char('a' + i) << '\t' << j + i << "\n";
         // iteration
         ++i;
     };
-    return 0; 
+    return 0;
 }
-
-// learned: char('a' + int-typed object) will iterate through the alphabet.
