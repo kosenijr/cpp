@@ -1,7 +1,7 @@
 #include "std_lib_facilities.h"
 
 // enumeration of currencies
-enum Notes // Notes turns into a type.
+enum Notes
 {
     naira,  // Nigeria
     kroner, // Norway
@@ -11,12 +11,11 @@ enum Notes // Notes turns into a type.
     euro,   // Europe (absent UK)
     franc,  // France
     rupee,  // India
-    real,   // Brazil
-    null
+    real    // Brazil
 };
 
-// get rates via double-type function with enum (i.e., Notes)-type switch statement
-double get_conversion_rates(Notes note) // Enum (i.e., Notes)-type exemplified; note is chosen as an object/variable with this type.
+// get rates: switch statement w/ Notes type
+double get_conversion_rates(Notes note)
 {
     switch (note)
     {
@@ -48,11 +47,12 @@ double get_conversion_rates(Notes note) // Enum (i.e., Notes)-type exemplified; 
         return 4.83;
         break;
     default:
-        return 0.00;
+        return null;
         break;
     }
 }
-// Enum ( i.e., Notes)-type function with char-type switch statement: char to currency
+
+// switch from char to currency
 Notes char_to_currency(char unit_input)
 {
     switch (unit_input)
@@ -63,10 +63,10 @@ Notes char_to_currency(char unit_input)
     case 'k':
         return kroner;
         break;
-    case 'j':
+    case 'ye':
         return yen;
         break;
-    case 'c':
+    case 'yu':
         return yuan;
         break;
     case 'p':
@@ -78,10 +78,10 @@ Notes char_to_currency(char unit_input)
     case 'f':
         return franc;
         break;
-    case 'i':
+    case 'ru':
         return rupee;
         break;
-    case 'b':
+    case 're':
         return real;
         break;
     default:
@@ -91,8 +91,8 @@ Notes char_to_currency(char unit_input)
 }
 // this switch will return enum integer positions so one more switch must ensue.
 
-// string-type function with enum ( i.e., Notes)-type switch statement: currency to string
-string currency_to_string(Notes note)
+// switch from currency to string
+string currency_to_string(Note note)
 {
     switch (note)
     {
@@ -112,19 +112,19 @@ string currency_to_string(Notes note)
         return "pounds";
         break;
     case euro:
-        return "euros";
+        return "euro";
         break;
     case franc:
-        return "francs";
+        return "franc";
         break;
     case rupee:
-        return "rupees";
+        return "rupee";
         break;
     case real:
-        return "reais";
+        return "real";
         break;
     default:
-        return "null"; // null is a string.
+        return "null";
         break;
     }
 }
@@ -136,29 +136,19 @@ int main()
     double amount_input;
     char unit_input = ' ';
     // user prompt
-    cout << "For conversion to dollars, please enter an amount and one of the following currencies (n - Naira, k - Kroner, j - Yen, c - Yuan, p - Pounds, e - Euro, f - Franc, i - Rupee, b - Real): \n";
-    // read into objects
-    cin >> amount_input >> unit_input;
+    cout << "For conversion to dollars, please enter an amount and one of the following currencies (n - Naira, k - Kroner, ye - Yen, yu - Yuan, p - Pounds, e - Euro, f - Franc, ru - Rupee, re - Real):"
+            // read into objects
+            cin >>
+        amount_input >> unit_input;
     // call functions to add value to subsequent if statement and assign to objects
     // get currency name in the form of a string
     // first: char to enum
     Notes currency_enum = char_to_currency(unit_input);
     // second: currency to string
-    string currency_string = currency_to_string(currency_enum);
+    constexpr string currency_string = currency_to_string(currency_enum);
     // get the rates
-    double conversion_rate = get_conversion_rates(currency_enum);
-    //  check out objects
-    // cout
-    //     << currency_enum << ", " << currency_string << ", " << conversion_rate << "\n";
-    // final condition
-    if (conversion_rate == 0.00 || currency_string == "null")
-    {
-        cout << "This currency and its rate is unknown. \n";
-    }
-    else
-    {
-        cout << "Your request of " << fixed << setprecision(2) << amount_input << " " << currency_string << " is the equivalent of " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
-    };
-    // return statement
-    return 0;
+    constexpr double conversion_rate = get_conversion_rates(currency_enum)
+                                       //  check out objects
+                                       cout
+                                       << currency_enum << ", " <<
 }

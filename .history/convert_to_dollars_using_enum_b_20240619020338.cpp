@@ -124,7 +124,7 @@ string currency_to_string(Notes note)
         return "reais";
         break;
     default:
-        return "null"; // null is a string.
+        return "null";
         break;
     }
 }
@@ -151,13 +151,10 @@ int main()
     // cout
     //     << currency_enum << ", " << currency_string << ", " << conversion_rate << "\n";
     // final condition
-    if (conversion_rate == 0.00 || currency_string == "null")
-    {
+    if (conversion_rate == 0.00 || currency_string == "null") {
         cout << "This currency and its rate is unknown. \n";
-    }
-    else
-    {
-        cout << "Your request of " << fixed << setprecision(2) << amount_input << " " << currency_string << " is the equivalent of " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
+    } else {
+        cout << "Your request of "<< fixed << setprecision(2) << amount_input << " " << currency_string << " is the equivalent of " << fixed << setprecision(2) << amount_input/conversion_rate << " dollars. \n";
     };
     // return statement
     return 0;

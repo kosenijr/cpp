@@ -11,12 +11,12 @@ enum Notes // Notes turns into a type.
     euro,   // Europe (absent UK)
     franc,  // France
     rupee,  // India
-    real,   // Brazil
-    null
+    real,
+    null    // Brazil
 };
 
-// get rates via double-type function with enum (i.e., Notes)-type switch statement
-double get_conversion_rates(Notes note) // Enum (i.e., Notes)-type exemplified; note is chosen as an object/variable with this type.
+// get rates: switch statement w/ Notes type
+double get_conversion_rates(Notes note) // Notes-type exemplified; note becomes an object
 {
     switch (note)
     {
@@ -52,7 +52,8 @@ double get_conversion_rates(Notes note) // Enum (i.e., Notes)-type exemplified; 
         break;
     }
 }
-// Enum ( i.e., Notes)-type function with char-type switch statement: char to currency
+
+// switch from char to currency
 Notes char_to_currency(char unit_input)
 {
     switch (unit_input)
@@ -91,7 +92,7 @@ Notes char_to_currency(char unit_input)
 }
 // this switch will return enum integer positions so one more switch must ensue.
 
-// string-type function with enum ( i.e., Notes)-type switch statement: currency to string
+// switch from currency to string
 string currency_to_string(Notes note)
 {
     switch (note)
@@ -124,7 +125,7 @@ string currency_to_string(Notes note)
         return "reais";
         break;
     default:
-        return "null"; // null is a string.
+        return "null";
         break;
     }
 }
@@ -151,13 +152,10 @@ int main()
     // cout
     //     << currency_enum << ", " << currency_string << ", " << conversion_rate << "\n";
     // final condition
-    if (conversion_rate == 0.00 || currency_string == "null")
-    {
+    if (conversion_rate == 0.00 || currency_string == "null") {
         cout << "This currency and its rate is unknown. \n";
-    }
-    else
-    {
-        cout << "Your request of " << fixed << setprecision(2) << amount_input << " " << currency_string << " is the equivalent of " << fixed << setprecision(2) << amount_input / conversion_rate << " dollars. \n";
+    } else {
+        cout << "Your request of "<< fixed << setprecision(2) << amount_input << " " << currency_string << " is the equivalent of " << fixed << setprecision(2) << amount_input/conversion_rate << " dollars. \n";
     };
     // return statement
     return 0;
