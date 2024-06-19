@@ -5,7 +5,7 @@ int main()
     // necessary initialization before loop
     int arr[] = {0, 97};
     auto [i, j] = arr;
-    
+
     // check
     // cout << a << ", " << i << "\n";
 

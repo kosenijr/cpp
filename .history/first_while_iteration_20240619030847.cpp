@@ -5,12 +5,12 @@ int main()
     // necessary initialization before loop
     int arr[] = {0, 97};
     auto [i, j] = arr;
-    
+
     // check
     // cout << a << ", " << i << "\n";
 
     // while statement
-    while (i < 26)
+    while (i >= 0 && i < 123)
     {
         // send message into the standare output stream
         cout << char('a' + i) << '\t' << j + i << "\n";
