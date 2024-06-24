@@ -51,30 +51,6 @@ Currency char_to_currency(char unit)
 {
     switch (unit)
     {
-            case Nairas:
-        return 8.87;
-    case Birrs:
-        return 5.37;
-    case Escudos:
-        return 3.77;
-    case Maloti:
-        return 7.92;
-    case Kwachas:
-        return 5.05;
-    case Dinars:
-        return 4.85;
-    case Lilangenis:
-        return 7.92;
-    case Dirhams:
-        return 0.03;
-    case Leones:
-        return 5580;
-    case Ouguiya:
-        return 7.52;
-    default:
-        return 0.00;
-    }
-
     }
 }
 
