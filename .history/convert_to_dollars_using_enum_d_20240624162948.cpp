@@ -13,40 +13,49 @@ enum Currency
     Dirhams,    // Morocco
     Leones,     // Sierra Leone
     Ouguiyas,   // Mauritania
-    null,
+    null        // invalid
 };
 
 // function with switch statement for rates
-double get_conversion_rates(Currency notes)
+double get_conversion_rates(Currency tender)
 {
-    switch (notes)
+    switch (tender)
     {
     case Nairas:
-        return 768.87;
+        return 768.50;
+        break;
     case Birrs:
-        return 55.37;
+        return 57.75;
+        break;
     case Escudos:
-        return 103.77;
+        return 102.75;
+        break;
     case Maloti:
-        return 17.92;
+        return 18.72;
+        break;
     case Kwachas:
-        return 1055.05;
+        return 1045.50;
+        break;
     case Dinars:
-        return 4.85;
+        return 4.84;
+        break;
     case Emalangeni:
-        return 17.92;
+        return 18.72;
+        break;
     case Dirhams:
-        return 10.03;
+        return 10.19;
+        break;
     case Leones:
-        return 21580;
+        return 22550;
+        break;
     case Ouguiyas:
-        return 37.52;
+        return 37.10;
+        break;
     default:
         return 0.00;
         break;
-    }
-}
-
+    };
+};
 // function with switch statement for enum terms
 Currency char_to_currency(char unit)
 {
@@ -85,13 +94,13 @@ Currency char_to_currency(char unit)
     default:
         return null;
         break;
-    }
-}
+    };
+};
 
 // function with switch statement for string terms
-string currency_to_string(Currency notes)
+string currency_to_string(Currency tender)
 {
-    switch (notes)
+    switch (tender)
     {
     case Nairas:
         return "Nairas";
@@ -124,18 +133,16 @@ string currency_to_string(Currency notes)
         return "Ouguiyas";
         break;
     default:
-        return "Null";
+        return "null";
         break;
-    }
-}
-
+    };
+};
 // main function
 int main()
 {
     // initialization
-    double amount_input = 0.00;
-    char unit_input = ' ';
-
+    double amount = 0.00;
+    char unit = ' ';
     // prompt user for input
     cout
         << "Please enter the amount, followed by one of the units listed, for conversion to dollars: \n"
@@ -145,21 +152,27 @@ int main()
         << "o - Mauritanian Ouguiyas) \n\n";
 
     // read into objects
-    cin >> amount_input >> unit_input;
-
+    cin >> amount >> unit;
     // call functions
-    // get currency from unit
-    Currency notes = char_to_currency(unit_input);
-    // get string from currency
-    string currency_string = currency_to_string(notes);
+    // get currency, then string
+    Currency tender_enum = char_to_currency(unit);
+    string tender_string = currency_to_string(tender_enum);
     // get rates
-    double conversion_rate = get_conversion_rates(notes);
-
+    double conversion_rate = get_conversion_rates(tender_enum);
     // check
-    cout << notes << " " << currency_string << " " << conversion_rate << '\n';
-
+    // cout << fixed << setprecision(2) << conversion_rate << '\t' << tender_enum << '\t' << tender_string << '\n';
     // condition
-
+    if (conversion_rate == 0.00)
+    {
+        cout << "This currency is either unknown or not one of our options. \n";
+    }
+    else
+    {
+        cout
+            << amount << " " << unit << " is $ " << fixed
+            << setprecision(2) << amount / conversion_rate
+            << ". \n";
+    }
     // return statement
     return 0;
-}
+};

@@ -149,7 +149,7 @@ int main()
 
     // call functions
     // get currency from unit
-    Currency notes = char_to_currency(unit_input);
+    Currency notes = char_to_currency(notes);
     // get string from currency
     string currency_string = currency_to_string(notes);
     // get rates

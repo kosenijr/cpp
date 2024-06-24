@@ -12,7 +12,7 @@ enum Currency
     Emalangeni, // Swaziland
     Dirhams,    // Morocco
     Leones,     // Sierra Leone
-    Ouguiyas,   // Mauritania
+    Ouguiyas,    // Mauritania
     null,
 };
 
@@ -43,7 +43,6 @@ double get_conversion_rates(Currency notes)
         return 37.52;
     default:
         return 0.00;
-        break;
     }
 }
 
@@ -135,9 +134,9 @@ int main()
     // initialization
     double amount_input = 0.00;
     char unit_input = ' ';
-
+    
     // prompt user for input
-    cout
+        cout
         << "Please enter the amount, followed by one of the units listed, for conversion to dollars: \n"
         << "n - Nigerian Nairas b- Ethiopian Birrs c - Cape Verdean Escudos \n"
         << "m - Lesotho Maloti k - Malawian Kwachas l - Libyan Dinars \n"
@@ -149,14 +148,14 @@ int main()
 
     // call functions
     // get currency from unit
-    Currency notes = char_to_currency(unit_input);
+    Currency notes = char_to_currency(notes);
     // get string from currency
     string currency_string = currency_to_string(notes);
     // get rates
     double conversion_rate = get_conversion_rates(notes);
 
     // check
-    cout << notes << " " << currency_string << " " << conversion_rate << '\n';
+    cout << notes << " " << currency_string << " " << conversion_rate << '\n'; 
 
     // condition
 

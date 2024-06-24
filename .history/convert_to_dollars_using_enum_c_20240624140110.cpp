@@ -12,8 +12,7 @@ enum Currency
     Emalangeni, // Swaziland
     Dirhams,    // Morocco
     Leones,     // Sierra Leone
-    Ouguiyas,   // Mauritania
-    null,
+    Ouguiyas    // Mauritania
 };
 
 // function with switch statement for rates
@@ -43,7 +42,6 @@ double get_conversion_rates(Currency notes)
         return 37.52;
     default:
         return 0.00;
-        break;
     }
 }
 
@@ -52,80 +50,70 @@ Currency char_to_currency(char unit)
 {
     switch (unit)
     {
-    case 'n':
+        case 'n':
         return Nairas;
-        break;
-    case 'b':
+        break;        
+        case 'b':
         return Birrs;
-        break;
-    case 'c':
+         break;        
+        case 'c':
         return Escudos;
-        break;
-    case 'm':
+         break;        
+        case 'm':
         return Maloti;
-        break;
-    case 'k':
+         break;        
+        case 'k':
         return Kwachas;
-        break;
-    case 'l':
+         break;        
+        case 'l':
         return Dinars;
-        break;
-    case 'e':
+         break;        
+        case 'e':
         return Emalangeni;
-        break;
-    case 'd':
+         break;        
+        case 'd':
         return Dirhams;
-        break;
-    case 's':
+         break;        
+        case 's':
         return Leones;
-        break;
-    case 'o':
+         break;        
+        case 'o':
         return Ouguiyas;
-        break;
+         break;
     default:
         return null;
-        break;
+        default;
     }
 }
 
 // function with switch statement for string terms
 string currency_to_string(Currency notes)
 {
-    switch (notes)
+    switch (unit)
     {
     case Nairas:
-        return "Nairas";
+        return 8.87;
         break;
     case Birrs:
-        return "Birrs";
-        break;
+        return 5.37;
     case Escudos:
-        return "Escudos";
-        break;
+        return 3.77;
     case Maloti:
-        return "Maloti";
-        break;
+        return 7.92;
     case Kwachas:
-        return "Kwachas";
-        break;
+        return 5.05;
     case Dinars:
-        return "Dinars";
-        break;
-    case Emalangeni:
-        return "Emalangeni";
-        break;
+        return 4.85;
+    case Lilangenis:
+        return 7.92;
     case Dirhams:
-        return "Dirhams";
-        break;
+        return 0.03;
     case Leones:
-        return "Leones";
-        break;
-    case Ouguiyas:
-        return "Ouguiyas";
-        break;
+        return 5580;
+    case Ouguiya:
+        return 7.52;
     default:
-        return "Null";
-        break;
+        return 0.00;
     }
 }
 
@@ -133,30 +121,12 @@ string currency_to_string(Currency notes)
 int main()
 {
     // initialization
-    double amount_input = 0.00;
-    char unit_input = ' ';
 
     // prompt user for input
-    cout
-        << "Please enter the amount, followed by one of the units listed, for conversion to dollars: \n"
-        << "n - Nigerian Nairas b- Ethiopian Birrs c - Cape Verdean Escudos \n"
-        << "m - Lesotho Maloti k - Malawian Kwachas l - Libyan Dinars \n"
-        << "e - Swazi Emalangeni d - Moroccan Dirhams s - Sierra Leonean Leones \n"
-        << "o - Mauritanian Ouguiyas) \n\n";
 
     // read into objects
-    cin >> amount_input >> unit_input;
 
     // call functions
-    // get currency from unit
-    Currency notes = char_to_currency(unit_input);
-    // get string from currency
-    string currency_string = currency_to_string(notes);
-    // get rates
-    double conversion_rate = get_conversion_rates(notes);
-
-    // check
-    cout << notes << " " << currency_string << " " << conversion_rate << '\n';
 
     // condition
 

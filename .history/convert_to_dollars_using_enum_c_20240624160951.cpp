@@ -12,8 +12,7 @@ enum Currency
     Emalangeni, // Swaziland
     Dirhams,    // Morocco
     Leones,     // Sierra Leone
-    Ouguiyas,   // Mauritania
-    null,
+    Ouguiyas    // Mauritania
 };
 
 // function with switch statement for rates
@@ -43,7 +42,6 @@ double get_conversion_rates(Currency notes)
         return 37.52;
     default:
         return 0.00;
-        break;
     }
 }
 
@@ -84,14 +82,14 @@ Currency char_to_currency(char unit)
         break;
     default:
         return null;
-        break;
+        default;
     }
 }
 
 // function with switch statement for string terms
 string currency_to_string(Currency notes)
 {
-    switch (notes)
+    switch (unit)
     {
     case Nairas:
         return "Nairas";
@@ -124,8 +122,8 @@ string currency_to_string(Currency notes)
         return "Ouguiyas";
         break;
     default:
-        return "Null";
-        break;
+        return null;
+        default;
     }
 }
 
@@ -135,9 +133,9 @@ int main()
     // initialization
     double amount_input = 0.00;
     char unit_input = ' ';
-
+    
     // prompt user for input
-    cout
+        cout
         << "Please enter the amount, followed by one of the units listed, for conversion to dollars: \n"
         << "n - Nigerian Nairas b- Ethiopian Birrs c - Cape Verdean Escudos \n"
         << "m - Lesotho Maloti k - Malawian Kwachas l - Libyan Dinars \n"
@@ -149,14 +147,14 @@ int main()
 
     // call functions
     // get currency from unit
-    Currency notes = char_to_currency(unit_input);
+    Currency notes = char_to_currency(unit);
     // get string from currency
     string currency_string = currency_to_string(notes);
     // get rates
-    double conversion_rate = get_conversion_rates(notes);
+    double conversion_rate = get_conversion_rates(Currency notes);
 
     // check
-    cout << notes << " " << currency_string << " " << conversion_rate << '\n';
+    cout << notes << " " << currency_string << " " << conversion_rate << '\n'; 
 
     // condition
 
