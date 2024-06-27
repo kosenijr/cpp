@@ -1,6 +1,5 @@
 //  include libraries
 #include "std_lib_facilities.h"
-
 // add an enum of common terms
 enum Currency
 {
@@ -45,13 +44,13 @@ double get_conversion_rates(Currency notes)
     default:
         return 0.00;
         break;
-    };
-};
+    }
+}
 
 // function with switch statement for enum terms
-Currency char_to_currency(char unit_input)
+Currency char_to_currency(char unit)
 {
-    switch (unit_input)
+    switch (unit)
     {
     case 'n':
         return Nairas;
@@ -71,7 +70,7 @@ Currency char_to_currency(char unit_input)
     case 'l':
         return Dinars;
         break;
-    case 'e':
+    case "e":
         return Emalangeni;
         break;
     case 'd':
@@ -86,8 +85,8 @@ Currency char_to_currency(char unit_input)
     default:
         return null;
         break;
-    };
-};
+    }
+}
 
 // function with switch statement for string terms
 string currency_to_string(Currency notes)
@@ -127,8 +126,8 @@ string currency_to_string(Currency notes)
     default:
         return "Null";
         break;
-    };
-};
+    }
+}
 
 // main function
 int main()
@@ -143,7 +142,7 @@ int main()
         << "n - Nigerian Nairas b- Ethiopian Birrs c - Cape Verdean Escudos \n"
         << "m - Lesotho Maloti k - Malawian Kwachas l - Libyan Dinars \n"
         << "e - Swazi Emalangeni d - Moroccan Dirhams s - Sierra Leonean Leones \n"
-        << "o - Mauritanian Ouguiyas)a \n";
+        << "o - Mauritanian Ouguiyas) \n\n";
 
     // read into objects
     cin >> amount_input >> unit_input;
@@ -157,7 +156,7 @@ int main()
     double conversion_rate = get_conversion_rates(notes);
 
     // check
-    cout << amount_input << " " << unit_input << " " << notes << " " << currency_string << " " << fixed << setprecision(2) << conversion_rate << '\n';
+    cout << notes << " " << currency_string << " " << conversion_rate << '\n';
 
     // condition
     // if ()

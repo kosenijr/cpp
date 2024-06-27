@@ -157,7 +157,7 @@ int main()
     double conversion_rate = get_conversion_rates(notes);
 
     // check
-    cout << amount_input << " " << unit_input << " " << notes << " " << currency_string << " " << fixed << setprecision(2) << conversion_rate << '\n';
+    cout << amount_input << unit_input << " " << notes << " " << currency_string << " " << fixed << setprecision(2) << conversion_rate << '\n';
 
     // condition
     // if ()

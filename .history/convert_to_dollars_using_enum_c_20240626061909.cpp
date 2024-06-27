@@ -143,7 +143,7 @@ int main()
         << "n - Nigerian Nairas b- Ethiopian Birrs c - Cape Verdean Escudos \n"
         << "m - Lesotho Maloti k - Malawian Kwachas l - Libyan Dinars \n"
         << "e - Swazi Emalangeni d - Moroccan Dirhams s - Sierra Leonean Leones \n"
-        << "o - Mauritanian Ouguiyas)a \n";
+        << "o - Mauritanian Ouguiyas) \n\n";
 
     // read into objects
     cin >> amount_input >> unit_input;
@@ -157,7 +157,7 @@ int main()
     double conversion_rate = get_conversion_rates(notes);
 
     // check
-    cout << amount_input << " " << unit_input << " " << notes << " " << currency_string << " " << fixed << setprecision(2) << conversion_rate << '\n';
+    cout << unit_input << notes << " " << currency_string << " " << fixed << setprecision(2) << conversion_rate << '\n';
 
     // condition
     // if ()

@@ -134,7 +134,7 @@ string currency_to_string(Currency notes)
 int main()
 {
     // initialization
-    double amount_input = 0.00;
+    int amount_input = 0;
     char unit_input = ' ';
 
     // prompt user for input

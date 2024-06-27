@@ -10,7 +10,7 @@ enum Currency
     Maloti,     // Lesotho
     Kwachas,    // Malawi
     Dinars,     // Libya
-    Emalangeni, // Swaziland
+    s, // Swaziland
     Dirhams,    // Morocco
     Leones,     // Sierra Leone
     Ouguiyas,   // Mauritania
@@ -34,7 +34,7 @@ double get_conversion_rates(Currency notes)
         return 1055.05;
     case Dinars:
         return 4.85;
-    case Emalangeni:
+    case s:
         return 17.92;
     case Dirhams:
         return 10.03;
@@ -72,12 +72,12 @@ Currency char_to_currency(char unit_input)
         return Dinars;
         break;
     case 'e':
-        return Emalangeni;
+        return s;
         break;
     case 'd':
         return Dirhams;
         break;
-    case 's':
+    case 'e':
         return Leones;
         break;
     case 'o':
@@ -112,8 +112,8 @@ string currency_to_string(Currency notes)
     case Dinars:
         return "Dinars";
         break;
-    case Emalangeni:
-        return "Emalangeni";
+    case s:
+        return "s";
         break;
     case Dirhams:
         return "Dirhams";
@@ -134,7 +134,7 @@ string currency_to_string(Currency notes)
 int main()
 {
     // initialization
-    double amount_input = 0.00;
+    int amount_input = 0;
     char unit_input = ' ';
 
     // prompt user for input
