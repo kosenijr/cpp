@@ -6,25 +6,24 @@ int main()
     // lowercase
     constexpr int a = 97;
     // uppercase
-    constexpr int A = 65;
+    constexpr int A = 64;
     // lowercase for loop: iterator must represent the amount of letters in alphabet
-    cout << "\n"
-         << "Lowercase \n\n";
-
     for (int i = 0; i < 26; ++i)
     {
         // lowercase digits
-        cout << char(a + i) << '\t' << (a + i) << "\n";
+        cout
+            << "Lowercase \n"
+            << char(a + i) << '\t' << (a + i) << "\n\n\n\n";
         // uppercase digits
     };
 
-    // uppercase, reuse for loop
-    cout << "\n"
-         << "Uppercase \n\n";
+    // uppercase for loop: iterator must represent the amount of letters in alphabet
     for (int i = 0; i < 26; ++i)
     {
         // uppercase digits
-        cout << char(A + i) << '\t' << (A + i) << '\n';
+        cout
+            << "Uppercase \n"
+            << char(A + i) << '\t' << (A + i) << '\n';
     };
     return 0;
 }

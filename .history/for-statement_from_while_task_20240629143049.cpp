@@ -8,8 +8,7 @@ int main()
     // uppercase
     constexpr int A = 65;
     // lowercase for loop: iterator must represent the amount of letters in alphabet
-    cout << "\n"
-         << "Lowercase \n\n";
+    cout << "Lowercase \n\n";
 
     for (int i = 0; i < 26; ++i)
     {

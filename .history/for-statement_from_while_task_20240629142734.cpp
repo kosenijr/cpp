@@ -8,8 +8,7 @@ int main()
     // uppercase
     constexpr int A = 65;
     // lowercase for loop: iterator must represent the amount of letters in alphabet
-    cout << "\n"
-         << "Lowercase \n\n";
+    cout << "Lowercase \n";
 
     for (int i = 0; i < 26; ++i)
     {
@@ -18,10 +17,10 @@ int main()
         // uppercase digits
     };
 
-    // uppercase, reuse for loop
+    // uppercase for loop: iterator must represent the amount of letters in alphabet
     cout << "\n"
-         << "Uppercase \n\n";
-    for (int i = 0; i < 26; ++i)
+         << "Uppercase \n";
+        for (int i = 0; i < 26; ++i)
     {
         // uppercase digits
         cout << char(A + i) << '\t' << (A + i) << '\n';
