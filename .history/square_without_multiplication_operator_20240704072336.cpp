@@ -8,9 +8,7 @@ int square(int y)
     {
         x += y;
     };
-    return x;
-    // the while loop runs until the condition y == sqrt(x) is met, then exits the loop; the return statment provides us with the current value of x after the loop.
-};
+    return x; // the while loop runs until the condition y == sqrt(x) is met, then exits the loop; the return statment provides us with the current value of x after the loop.
 
 int main()
 {
@@ -20,8 +18,7 @@ int main()
     int six = square(6);
     int ten = square(10);
     int twelve = square(12);
-    // one_hundred is very slow because of the energy needed for calculation.
-    // int one_hundred = square(100);
+    int one_hundred = square(100);
 
     // sent to standard output stream
     cout
@@ -29,8 +26,8 @@ int main()
         << "Four" << '\t' << four << "\n"
         << "Six" << '\t' << six << "\n"
         << "Ten" << '\t' << ten << "\n"
-        << "Twelve" << '\t' << twelve << "\n";
-        // << "One Hundred" << '\t' << one_hundred << "\n";
+        << "Twelve" << '\t' << twelve << "\n"
+        << "One Hundred" << '\t' << one_hundred << "\n";
 
     // return statement
     return 0;

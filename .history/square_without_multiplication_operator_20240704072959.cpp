@@ -2,7 +2,7 @@
 // variable
 int x = 0;
 // function
-int square(int y)
+int square(constexpr int y)
 {
     while (y != sqrt(x))
     {

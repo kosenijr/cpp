@@ -1,8 +1,7 @@
 #include "std_lib_facilities.h"
-// variable
-int x = 0;
 // function
-int square(int y)
+int square(int x, int y)
+x = 0;
 {
     while (y != sqrt(x))
     {
@@ -20,8 +19,7 @@ int main()
     int six = square(6);
     int ten = square(10);
     int twelve = square(12);
-    // one_hundred is very slow because of the energy needed for calculation.
-    // int one_hundred = square(100);
+    int one_hundred = square(100);
 
     // sent to standard output stream
     cout
@@ -29,8 +27,8 @@ int main()
         << "Four" << '\t' << four << "\n"
         << "Six" << '\t' << six << "\n"
         << "Ten" << '\t' << ten << "\n"
-        << "Twelve" << '\t' << twelve << "\n";
-        // << "One Hundred" << '\t' << one_hundred << "\n";
+        << "Twelve" << '\t' << twelve << "\n"
+        << "One Hundred" << '\t' << one_hundred << "\n";
 
     // return statement
     return 0;

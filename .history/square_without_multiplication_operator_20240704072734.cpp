@@ -29,8 +29,8 @@ int main()
         << "Four" << '\t' << four << "\n"
         << "Six" << '\t' << six << "\n"
         << "Ten" << '\t' << ten << "\n"
-        << "Twelve" << '\t' << twelve << "\n";
-        // << "One Hundred" << '\t' << one_hundred << "\n";
+        << "Twelve" << '\t' << twelve << "\n"
+        << "One Hundred" << '\t' << one_hundred << "\n";
 
     // return statement
     return 0;
