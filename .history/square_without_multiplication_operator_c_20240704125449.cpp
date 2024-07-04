@@ -30,4 +30,4 @@ int main()
     return 0;
 }
 
-//  learned: can utilize constexpr for a function.
+//  learned: can utilize constexpr for a function when all arguments/parameters are known at compile time (i.e., present example); however, const should be used for run time evaluation. Will experiment in file c!

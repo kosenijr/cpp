@@ -2,7 +2,7 @@
 #include "std_lib_facilities.h"
 
 // set up square function
-constexpr int square(int main_number)
+const int square(int main_number)
 {
     // intialize int-typed object with 0;
     int squared_number = 0;
@@ -16,15 +16,13 @@ constexpr int square(int main_number)
 
 // set up main function
 int main() {
-    // assignments
-    constexpr int forty_five = square(45);
-    constexpr int two_hundred_twenty_five = square(225);
+    // request inputs
+    cin >> main_number;
+    constexpr int final_number = square(main_number);
 
     // standard output stream
-    cout
-    << "45 \t" << forty_five << '\n'
-    << "225 \t" << two_hundred_twenty_five << '\n';
+    cout << main_number << " squared is " << final_number << '\n';
     return 0;
 }
 
-//  learned: can utilize constexpr for a function.
+//  learned: can utilize constexpr for a function when all arguments/parameters are known at compile time (i.e., present example); however, const should be used for run time evaluation. Will experiment in file c!
