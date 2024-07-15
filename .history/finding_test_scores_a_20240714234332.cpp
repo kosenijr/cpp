@@ -26,9 +26,9 @@ int main()
 	}
 	// send mean to standard output stream
 	cout
-		<< "Sum: " << sum << '\n'
-		<< "Number of Scores: " << scores_stored.size() << '\n'
-		<< "Average (Mean): " << fixed << setprecision(1) << sum / scores_stored.size() << '\n';
+		<< sum << '\n'
+		<< scores_stored.size() << '\n'
+		<< fixed << setprecision(1) << sum / scores_stored.size() << '\n';
 	// return statement
 	return 0;
 }
