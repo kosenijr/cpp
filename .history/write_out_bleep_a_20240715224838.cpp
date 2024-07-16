@@ -31,7 +31,7 @@ int main()
     {
         // inner
         // conditional
-        if (terms[i] == first_disliked_term || terms[i] == second_disliked_term)
+        if (terms[i] == disliked_term)
         {
             cout << "BLEEP \n";
         }

@@ -9,8 +9,7 @@ int main()
     // main-inner
     //  set up vector and initialize an object for comparison
     vector<string> terms;
-    const string first_disliked_term = "fiction";
-    const string second_disliked_term = "Fiction";
+    const string disliked_term = "fiction" || "Fiction";
     // prompt user for input
     cout << "Please enter some terms: \n";
 
@@ -31,7 +30,7 @@ int main()
     {
         // inner
         // conditional
-        if (terms[i] == first_disliked_term || terms[i] == second_disliked_term)
+        if (terms[i] == disliked_term)
         {
             cout << "BLEEP \n";
         }
