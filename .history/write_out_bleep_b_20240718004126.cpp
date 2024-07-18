@@ -19,7 +19,7 @@ int main()
         general.push_back(term);
     };
 
-    sort(general.begin(), general.end());
+    sort(general);
     // two range-for-loops for comparisons
     for (string& i : general)
     {

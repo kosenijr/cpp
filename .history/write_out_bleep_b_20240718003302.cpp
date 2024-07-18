@@ -19,11 +19,11 @@ int main()
         general.push_back(term);
     };
 
-    sort(general.begin(), general.end());
+    sort(general);
     // two range-for-loops for comparisons
-    for (string& i : general)
+    for (string i : general)
     {
-        for (const string& j : dislike)
+        for (string j : dislike)
         {
             if (i == j)
                 i = "BLEEP";

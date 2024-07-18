@@ -19,18 +19,23 @@ int main()
         general.push_back(term);
     };
 
-    sort(general.begin(), general.end());
-    // two range-for-loops for comparisons
-    for (string& i : general)
-    {
-        for (const string& j : dislike)
-        {
-            if (i == j)
-                i = "BLEEP";
-        }
-        cout << i << '\n';
-    }
+    // sort(general);
 
+    // vectors: check general on dislike
+    for (int i = 0; i < general.size(); ++i)
+    {
+        for (int j = 0; j < dislike.size(); ++j)
+        {
+            if (general[i] == dislike[j])
+            {
+                general[i] = "BLEEP";
+            }
+            else
+            {
+                cout << general[i] << '\n';
+            }
+        }
+    }
     // return statement
     return 0;
 }
