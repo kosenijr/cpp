@@ -11,28 +11,25 @@ int main()
         {"unsure", "BLEEP"},
         {"not", "BLEEP"},
         {"doubtful", "BLEEP"},
-        {"negative", "BLEEP"}};
+        {"negative", "BLEEP"}
+    };
 
     // prompt user for input
     cout << "Please enter your terms: \n";
 
     // for-statement for reading into each element and filling up vector
-    for (string term; cin >> term;)
-    {
+    for (string term; cin >> term;) {
         general.push_back(term);
 
-        for (string term; cin >> term;)
-        {
-            auto check = dislike.find(term);
-            if (check != dislike.end())
-            {
-                cout << second << '\n';
-            }
-            else
-            {
-                cout << term << '\n';
-            }
+    for (string term; cin >> term;) {
+        string check = dislike.find(term);
+        if (check != dislike.end()) {
+            cout << check = second << '\n';
+        } else {
+            cout << term << '\n';
         }
+    }
+
     };
     // return statement
     return 0;

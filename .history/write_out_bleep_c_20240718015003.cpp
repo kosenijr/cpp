@@ -26,7 +26,7 @@ int main()
             auto check = dislike.find(term);
             if (check != dislike.end())
             {
-                cout << second << '\n';
+                cout << dislike.second << '\n';
             }
             else
             {

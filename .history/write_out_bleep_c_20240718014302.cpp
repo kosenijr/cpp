@@ -23,10 +23,10 @@ int main()
 
         for (string term; cin >> term;)
         {
-            auto check = dislike.find(term);
+            string check = dislike.find(term);
             if (check != dislike.end())
             {
-                cout << second << '\n';
+                cout << check = second << '\n';
             }
             else
             {
