@@ -1,12 +1,5 @@
 #include "std_lib_facilities.h"
 
-// function for converting char to int
-int char_to_int(char c)
-{
-    int i = (int)c;
-    return i;
-}
-
 int main()
 {
     // declaration of ints and char
@@ -17,13 +10,18 @@ int main()
     // while statement
     while (true)
     {
+        // function for converting char to int
+        int char_to_int(char c)
+        {
+            i = (int)c;
+            return i;
+        }
         // prompt user for input
         cout << "Please enter two integers: \n";
         // read into two ints
         cin >> a >> b;
-        if ()
+        if (a == char_to_int('|'))
         {
-            char_to_int('|');
             break;
         }
         else
@@ -32,6 +30,9 @@ int main()
             cout << a << " " << b << '\n';
         }
     }
+
+    // check
+    cout << i << '\n';
 
     return 0;
 }

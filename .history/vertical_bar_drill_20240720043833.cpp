@@ -1,37 +1,27 @@
 #include "std_lib_facilities.h"
 
-// function for converting char to int
-int char_to_int(char c)
-{
-    int i = (int)c;
-    return i;
-}
-
 int main()
 {
     // declaration of ints and char
-    int a;
-    int b;
-    int i;
-
+    int a, b;
+    char pipe;
     // while statement
-    while (true)
+    while (cin)
     {
         // prompt user for input
         cout << "Please enter two integers: \n";
-        // read into two ints
-        cin >> a >> b;
-        if ()
+        // send ints to standard output stream
+        if (a == '|' || b == '|')
         {
-            char_to_int('|');
+            cin >> pipe;
             break;
         }
         else
         {
-            // send to standard output stream
+            // read into ints
+            cin >> a >> b;
             cout << a << " " << b << '\n';
         }
-    }
-
+    };
     return 0;
 }

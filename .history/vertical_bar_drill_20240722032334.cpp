@@ -21,9 +21,9 @@ int main()
         cout << "Please enter two integers: \n";
         // read into two ints
         cin >> a >> b;
-        if ()
+        if (a == '|')
         {
-            char_to_int('|');
+            char_to_int('|')
             break;
         }
         else
@@ -32,6 +32,10 @@ int main()
             cout << a << " " << b << '\n';
         }
     }
+
+
+    // check
+    cout << a << " " << b << '\n';
 
     return 0;
 }
