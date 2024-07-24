@@ -9,7 +9,7 @@ when a terminating '|' is entered.
 int main()
 {
     // declare two ints and a char
-    int int1, int2; // for the two integers needed for user input;
+    int int1, in2; // for the two integers needed for user input;
     char char1; // need char for termination
 
     // set up while statement
@@ -34,7 +34,7 @@ int main()
             }
             else
             {
-                cout << "Invalid Input. \n";
+                cout << "Invalid Input. Try again. \n";
             };
         };
     };

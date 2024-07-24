@@ -9,34 +9,27 @@ when a terminating '|' is entered.
 int main()
 {
     // declare two ints and a char
-    int int1, int2; // for the two integers needed for user input;
-    char char1; // need char for termination
+    int int1, int2;
+    char char1;
+    const string prompt = "Please enter two integers or '|' to stop: \n";
 
     // set up while statement
     while (true)
     {
         // prompt user for input
-        cout << "Please enter two integers or '|' to stop: \n";
-        // start with condition
+        cout << prompt;
+        // condition
         if (cin >> int1 >> int2)
         {
-            // condition
             cout << int1 << '\t' << int2 << '\n';
         }
-        else
+        else if (cin.peek() == '|')
         {
             cin.clear();
             cin >> char1;
-
-            if (char1 == '|') // started with char first to avoid error later.
-            {
-                break; // termination of loop/program
-            }
-            else
-            {
-                cout << "Invalid Input. \n";
-            };
-        };
+            // reset standard input stream;
+            break;
+        }
     };
     // return statement
     return 0;

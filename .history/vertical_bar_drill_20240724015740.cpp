@@ -34,7 +34,7 @@ int main()
             }
             else
             {
-                cout << "Invalid Input. \n";
+                cout << "Invalid Input. Try again. \n";
             };
         };
     };
