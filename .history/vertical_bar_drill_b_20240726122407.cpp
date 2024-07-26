@@ -1,4 +1,5 @@
 /*
+Description:
 Write a program that consists of a while-loop that (each time around
 the loop) reads in two ints and then prints them. Exit the program
 when a terminating '|' is entered.
@@ -8,35 +9,36 @@ when a terminating '|' is entered.
 
 int main()
 {
-    // declare two ints and a char
-    int int1, int2; // for the two integers needed for user input;
-    char char1; // need char for termination
-
-    // set up while statement
+    // declare one char and two ints
+    char char1;
+    int int1, int2;
+    // set up while-statement
     while (true)
     {
         // prompt user for input
         cout << "Please enter two integers or '|' to stop: \n";
-        // start with condition
+        // set up conditions
         if (cin >> int1 >> int2)
         {
-            // condition
             cout << int1 << '\t' << int2 << '\n';
         }
         else
         {
+            // clear standard output stream
             cin.clear();
-            cin >> char1;
-
-            if (char1 == '|') // started with char first to avoid error later.
+                // redirect type of user input
+                cin >> char1;
+            // provide new condition
+            if (char1 == '|')
             {
-                break; // termination of loop/program
+                // terminate program
+                break;
             }
             else
             {
-                cout << "Invalid Input. \n";
-            };
-        };
+                cout << "Incorrect input. \n";
+            }
+        }
     };
     // return statement
     return 0;
@@ -46,7 +48,9 @@ int main()
 Things learned:
 - Inner if statement within else statement
 - utilization of cin.clear();
-- importance of **break** in a loop;
+- important of break in a loop;
 - redirection of a different type into the standard input stream after the utilization of cin.clear();
-- the formulaic prevention of an infinite loop (i.e., additionally declare a suitable type and utilize that as well).
+- the formulaic prevention of an infinite loop (i.e., additionally declare a suitable type.).
+
+
 */

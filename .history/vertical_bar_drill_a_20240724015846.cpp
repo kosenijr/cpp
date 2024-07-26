@@ -41,12 +41,3 @@ int main()
     // return statement
     return 0;
 }
-
-/*
-Things learned:
-- Inner if statement within else statement
-- utilization of cin.clear();
-- importance of **break** in a loop;
-- redirection of a different type into the standard input stream after the utilization of cin.clear();
-- the formulaic prevention of an infinite loop (i.e., additionally declare a suitable type and utilize that as well).
-*/
