@@ -10,7 +10,7 @@ when a terminating '|' is entered.
 int main()
 {
     // declare one char and two ints
-    char char1;
+    char char;
     int int1, int2;
     // set up while-statement
     while (true)
@@ -18,26 +18,20 @@ int main()
         // prompt user for input
         cout << "Please enter two integers or '|' to stop: \n";
         // set up conditions
-        if (cin >> int1 >> int2)
+        if (cin >> char &&char == '|')
         {
-            cout << int1 << '\t' << int2 << '\n';
+            // terminate program
+            break;
         }
         else
         {
-            // clear standard output stream
-            cin.clear();
-                // redirect type of user input
-                cin >>
-                char1;
-            // provide new condition
-            if (char1 == '|')
+            if (cin >> int1 >> int2)
             {
-                // terminate program
-                break;
+                cout << a << '\t' << b << '\n';
             }
             else
             {
-                cout << "Incorrect input. \n";
+                cout << "Your input was incorrect. \n";
             }
         }
     };

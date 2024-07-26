@@ -18,27 +18,22 @@ int main()
         // prompt user for input
         cout << "Please enter two integers or '|' to stop: \n";
         // set up conditions
-        if (cin >> int1 >> int2)
+        if (cin >> char1 && char1 == '|')
         {
-            cout << int1 << '\t' << int2 << '\n';
+            // terminate program
+            break;
         }
-        else
+        else if (cin >> char1 && char1 != '|')
         {
-            // clear standard output stream
+            cout << "Your input was incorrect. \n";
+        } else {
+            // clear out standard input stream
             cin.clear();
-                // redirect type of user input
-                cin >>
-                char1;
-            // provide new condition
-            if (char1 == '|')
-            {
-                // terminate program
-                break;
-            }
-            else
-            {
-                cout << "Incorrect input. \n";
-            }
+            // input ints
+            cin >> int1 >> int2;
+
+            // send to output stream
+            cout << a << '\t' << b << '\n';
         }
     };
     // return statement

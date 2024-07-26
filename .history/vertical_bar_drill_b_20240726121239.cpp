@@ -20,7 +20,7 @@ int main()
         // set up conditions
         if (cin >> int1 >> int2)
         {
-            cout << int1 << '\t' << int2 << '\n';
+            cout << int1 << '\t' << int2;
         }
         else
         {

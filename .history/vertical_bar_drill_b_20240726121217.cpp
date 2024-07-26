@@ -20,12 +20,12 @@ int main()
         // set up conditions
         if (cin >> int1 >> int2)
         {
-            cout << int1 << '\t' << int2 << '\n';
+            cout << int1 << '\t' << int2;
         }
         else
         {
             // clear standard output stream
-            cin.clear();
+            cin.clear()
                 // redirect type of user input
                 cin >>
                 char1;
