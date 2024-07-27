@@ -29,9 +29,8 @@ int main() {
                 break;
             } else {
                 cout << "Incorrect input. \n";
-            };
-        };
-    };
-    // return statement
-    return 0;
+            }
+
+        }
+    }
 }
