@@ -21,19 +21,7 @@ int main()
         // set up conditions
         if (cin >> int1 >> int2)
         {
-            // add a new condition
-            if (int1 < int2)
-            {
-                cout
-                    << "The smaller value is: " << int1 << '\n'
-                    << "The larger value is: " << int2 << '\n';
-            }
-            else
-            {
-                cout
-                    << "The smaller value is: " << int2 << '\n'
-                    << "The larger value is: " << int1 << '\n';
-            };
+            cout << int1 << '\t' << int2 << '\n';
         }
         else
         {
@@ -51,6 +39,20 @@ int main()
                 cout << "Incorrect input. \n";
             };
         };
+
+        // add a new condition
+        if (int1 < int2)
+        {
+            cout
+                << "The smaller value is " << int1 << '\n'
+                << "The larger value is " << int2 << '\n';
+        }
+        else
+        {
+            cout
+                << "The smaller value is " << int2 << '\n'
+                << "The larger value is " << int1 << '\n';
+        }
     };
     // return statement
     return 0;
