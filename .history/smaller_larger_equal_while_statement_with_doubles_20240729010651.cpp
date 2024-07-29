@@ -1,5 +1,7 @@
 /*
-Change the program so that it uses doubles instead of ints.
+Change the program to write out the smaller value is: followed by
+the smaller of the numbers and the larger value is: followed by the
+larger value.
 */
 
 #include "std_lib_facilities.h"
@@ -8,7 +10,7 @@ int main()
 {
     // declare one char and two ints
     char char1;
-    double dbl1, dbl2;
+    double deci1, deci2;
 
     // set up while statement with true parameter
     while (true)
@@ -17,20 +19,20 @@ int main()
         cout << "Please enter two decimals or '|' to exit: \n";
 
         // set up conditions
-        if (cin >> dbl1 >> dbl2)
+        if (cin >> deci1 >> deci2)
         {
             // add a new condition
-            if (dbl1 < dbl2)
+            if (deci1 < deci2)
             {
                 cout
-                    << "The smaller value is: " << dbl1 << '\n'
-                    << "The larger value is: " << dbl2 << '\n';
+                    << "The smaller value is: " << deci1 << '\n'
+                    << "The larger value is: " << deci2 << '\n';
             }
-            else if (dbl1 > dbl2)
+            else if (deci1 > deci2)
             {
                 cout
-                    << "The smaller value is: " << dbl2 << '\n'
-                    << "The larger value is: " << dbl1 << '\n';
+                    << "The smaller value is: " << deci2 << '\n'
+                    << "The larger value is: " << deci1 << '\n';
             } else {
                 cout << "The numbers are equal. \n";
             };

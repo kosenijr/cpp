@@ -1,5 +1,7 @@
 /*
-Change the program so that it uses doubles instead of ints.
+Change the program to write out the smaller value is: followed by
+the smaller of the numbers and the larger value is: followed by the
+larger value.
 */
 
 #include "std_lib_facilities.h"
