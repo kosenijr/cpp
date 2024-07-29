@@ -28,7 +28,7 @@ int main()
                     << "The smaller value is: " << int1 << '\n'
                     << "The larger value is: " << int2 << '\n';
             }
-            else if (int1 > int2)
+            else if (int > int2)
             {
                 cout
                     << "The smaller value is: " << int2 << '\n'

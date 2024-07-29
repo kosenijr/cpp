@@ -30,7 +30,7 @@ int main()
             }
             else if (int1 > int2)
             {
-                cout
+1                cout
                     << "The smaller value is: " << int2 << '\n'
                     << "The larger value is: " << int1 << '\n';
             } else {
