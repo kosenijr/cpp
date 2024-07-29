@@ -17,7 +17,7 @@ int main()
         cout << "Please enter two decimals or '|' to exit: \n";
 
         // set up conditions
-        if (cin >> dbl1 >> dbl2)
+        if (cin >> setprecision(0) >> dbl1 >> dbl2)
         {
             // add a new condition
             if (dbl1 < dbl2)
