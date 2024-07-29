@@ -23,14 +23,14 @@ int main()
             if (dbl1 < dbl2)
             {
                 cout
-                    << "The smaller value is: " << fixed << setprecision(2) << sizeof(dbl1) << '\n'
-                    << "The larger value is: " << fixed << setprecision(2) << sizeof(dbl2) << '\n';
+                    << "The smaller value is: " << dbl1.size() << '\n'
+                    << "The larger value is: " << dbl2.size() << '\n';
             }
-            else if (sizeof(dbl1) > sizeof(dbl2))
+            else if (dbl1 > dbl2)
             {
                 cout
-                    << "The smaller value is: " << fixed << setprecision(2) << sizeof(dbl2) << '\n'
-                    << "The larger value is: " << fixed << setprecision(2) << sizeof(dbl1) << '\n';
+                    << "The smaller value is: " << dbl2 << '\n'
+                    << "The larger value is: " << dbl1 << '\n';
             } else {
                 cout << "The numbers are equal. \n";
             };

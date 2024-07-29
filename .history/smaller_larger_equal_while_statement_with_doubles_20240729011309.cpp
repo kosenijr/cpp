@@ -17,20 +17,20 @@ int main()
         cout << "Please enter two decimals or '|' to exit: \n";
 
         // set up conditions
-        if (cin >> dbl1 >> dbl2)
+        if (cin >> fixed >> setprecision(2) >> dbl1 >> dbl2)
         {
             // add a new condition
             if (dbl1 < dbl2)
             {
                 cout
-                    << "The smaller value is: " << fixed << setprecision(2) << sizeof(dbl1) << '\n'
-                    << "The larger value is: " << fixed << setprecision(2) << sizeof(dbl2) << '\n';
+                    << "The smaller value is: " << fixed << setprecision(2) << dbl1 << '\n'
+                    << "The larger value is: " << fixed << setprecision(2) << dbl2 << '\n';
             }
-            else if (sizeof(dbl1) > sizeof(dbl2))
+            else if (dbl1 > dbl2)
             {
                 cout
-                    << "The smaller value is: " << fixed << setprecision(2) << sizeof(dbl2) << '\n'
-                    << "The larger value is: " << fixed << setprecision(2) << sizeof(dbl1) << '\n';
+                    << "The smaller value is: " << fixed << setprecision(2) << dbl2 << '\n'
+                    << "The larger value is: " << fixed << setprecision(2) << dbl1 << '\n';
             } else {
                 cout << "The numbers are equal. \n";
             };
