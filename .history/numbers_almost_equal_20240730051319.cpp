@@ -25,14 +25,14 @@ int main()
             if (dbl1 < dbl2)
             {
                 cout
-                    << "The smaller value is: " << fixed << setprecision(3) << dbl1 << '\n'
-                    << "The larger value is: " << fixed << setprecision(3) << dbl2 << '\n';
+                    << "The smaller value is: " << fixed << setprecision(2) << dbl1 << '\n'
+                    << "The larger value is: " << fixed << setprecision(2) << dbl2 << '\n';
             }
             else if (dbl1 > dbl2)
             {
                 cout
-                    << "The smaller value is: " << fixed << setprecision(3) << dbl2 << '\n'
-                    << "The larger value is: " << fixed << setprecision(3) << dbl1 << '\n';
+                    << "The smaller value is: " << fixed << setprecision(2) << dbl2 << '\n'
+                    << "The larger value is: " << fixed << setprecision(2) << dbl1 << '\n';
             }
             else
             {
@@ -57,8 +57,8 @@ int main()
             else
             {
                 cout << "Incorrect input. \n";
-            }
-        }
+            };
+        };
     };
     // return statement
     return 0;

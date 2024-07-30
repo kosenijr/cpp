@@ -1,7 +1,5 @@
 /*
-Change the program so that it writes out the numbers are almost
-equal after writing out which is the larger and the smaller if the two
-numbers differ by less than 1.0/100.
+Change the program so that it uses doubles instead of ints.
 */
 
 #include "std_lib_facilities.h"
@@ -25,21 +23,21 @@ int main()
             if (dbl1 < dbl2)
             {
                 cout
-                    << "The smaller value is: " << fixed << setprecision(3) << dbl1 << '\n'
-                    << "The larger value is: " << fixed << setprecision(3) << dbl2 << '\n';
+                    << "The smaller value is: " << fixed << setprecision(2) << dbl1 << '\n'
+                    << "The larger value is: " << fixed << setprecision(2) << dbl2 << '\n';
             }
             else if (dbl1 > dbl2)
             {
                 cout
-                    << "The smaller value is: " << fixed << setprecision(3) << dbl2 << '\n'
-                    << "The larger value is: " << fixed << setprecision(3) << dbl1 << '\n';
+                    << "The smaller value is: " << fixed << setprecision(2) << dbl2 << '\n'
+                    << "The larger value is: " << fixed << setprecision(2) << dbl1 << '\n';
             }
             else
             {
                 cout << "The numbers are equal. \n";
             };
 
-            if (fabs(dbl1 - dbl2) < (1.0/100)) {
+            if (abs(dbl1 - dbl2) < (1.0/100)) {
                 cout << "The numbers are almost equal. \n";
             }
         }
@@ -57,13 +55,9 @@ int main()
             else
             {
                 cout << "Incorrect input. \n";
-            }
-        }
+            };
+        };
     };
     // return statement
     return 0;
 }
-
-/*
-use fabs for floating points
-*/
