@@ -26,8 +26,7 @@ int main()
         // set up conditions
         if (cin >> dbl1)
         {
-            // fix and set precision
-            cout << fixed << setprecision(2) << dbl1 << '\n';
+            cout << dbl1 << '\n';
 
         }
         else

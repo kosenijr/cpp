@@ -13,21 +13,41 @@ int main()
 {
     // declare one char and two ints
     char char1;
-    double dbl1; // changed to read just one double
-    // two doubles for smallest and largest values respectively
-    double smallest_so_far, largest_so_far;
+    double dbl1, dbl2; // changed to read just one double
+    int int1;
 
     // set up while statement with true parameter
     while (true)
     {
         // prompt user for input
-        cout << "Please enter one decimal or '|' to exit: \n";
+        cout << "Please enter two decimals or '|' to exit: \n";
 
         // set up conditions
-        if (cin >> dbl1)
+        if (cin >> dbl1 >> int1)
         {
-            // fix and set precision
-            cout << fixed << setprecision(2) << dbl1 << '\n';
+            // asignment int value to dbl
+            dbl2 = int1;
+            // add a new condition
+            if (dbl1 < dbl2)
+            {
+                cout
+                    << "The smaller value is: " << fixed << setprecision(2) << dbl1 << '\n'
+                    << "The larger value is: " << fixed << setprecision(2) << dbl2 << '\n';
+            }
+            else if (dbl1 > dbl2)
+            {
+                cout
+                    << "The smaller value is: " << fixed << setprecision(2) << dbl2 << '\n'
+                    << "The larger value is: " << fixed << setprecision(2) << dbl1 << '\n';
+            }
+            else
+            {
+                cout << "The numbers are equal. \n";
+            };
+
+            if (fabs(dbl1 - dbl2) < (1.0/100)) {
+                cout << "The numbers are almost equal. \n";
+            };
 
         }
         else
