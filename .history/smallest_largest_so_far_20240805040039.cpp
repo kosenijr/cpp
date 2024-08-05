@@ -29,16 +29,7 @@ int main()
          if (dbl1 >= 0 && smallest_so_far == 0 && largest_so_far == 0) {
             smallest_so_far = 0;
             largest_so_far = dbl1;
-         } else if (dbl1 > 0 && dbl1 > smallest_so_far && dbl1 < largest_so_far)
-         {
-            smallest_so_far = dbl1;
-
-         } else if (smallest_so_far > 0 && dbl1 < smallest_so_far ) 
-         {
-            smallest_so_far = dbl1;   
-         }else if (dbl1 > largest_so_far) {
-            largest_so_far = dbl1;
-         }
+         } 
         //  check standard output stream
          cout
          << "You entered: " << dbl1 << '\n'

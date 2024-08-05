@@ -14,8 +14,8 @@ int main()
     // declare one char and two ints
     char char1;
     double dbl1; // changed to read just one double
-    // two doubles for smallest and largest values respectively; initialize
-    double smallest_so_far = 0, largest_so_far = 0;
+    // two doubles for smallest and largest values respectively
+    double smallest_so_far, largest_so_far;
 
     // set up while statement with true parameter
     while (true)
@@ -26,20 +26,11 @@ int main()
         // set up conditions
         if (cin >> dbl1)
         {
-         if (dbl1 >= 0 && smallest_so_far == 0 && largest_so_far == 0) {
+         if (dbl1 >= 0 && !smallest_so_far && !largest_so_far) {
             smallest_so_far = 0;
             largest_so_far = dbl1;
-         } else if (dbl1 > 0 && dbl1 > smallest_so_far && dbl1 < largest_so_far)
-         {
-            smallest_so_far = dbl1;
+         } 
 
-         } else if (smallest_so_far > 0 && dbl1 < smallest_so_far ) 
-         {
-            smallest_so_far = dbl1;   
-         }else if (dbl1 > largest_so_far) {
-            largest_so_far = dbl1;
-         }
-        //  check standard output stream
          cout
          << "You entered: " << dbl1 << '\n'
          << "Smallest so far: " << smallest_so_far << '\n'
