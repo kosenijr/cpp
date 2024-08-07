@@ -24,9 +24,9 @@ int main() {
             cout << dbl1 << '\n';
         } else {
             // clear out standard input stream
-            cin.clear();
+            cin.clear()
             // read into different type
-            cin >> char1;
+            cin >> char1
 
             // set up inner condition
             if (char1 == '|') {
@@ -38,5 +38,6 @@ int main() {
     }
     // return statement
     return 0;
+
 }
 
