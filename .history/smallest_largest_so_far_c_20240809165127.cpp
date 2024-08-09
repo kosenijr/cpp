@@ -52,8 +52,3 @@ int main()
     // return statement
     return 0;
 }
-
-/*
-Always use max() and lowest() as trackers because of lowest()'s abiility to provide the negative extreme.
-Min() only provides the smallest positive normalized value.
-*/
