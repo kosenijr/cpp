@@ -45,7 +45,7 @@ int main()
             }
             else if (dbl1 > largest_so_far && !isnan(smallest_so_far))
             {
-                largest_so_far = dbl1;
+                                largest_so_far = dbl1;
                 cout
                     << "You entered: " << dbl1 << '\n'
                     << "Smallest so far: " << smallest_so_far << '\n'

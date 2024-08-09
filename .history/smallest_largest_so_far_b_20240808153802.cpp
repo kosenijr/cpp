@@ -13,10 +13,8 @@ int main()
 {
     // declare specific-typed object: ALWAYS initialize
     char char1;
-    double dbl1;
-    // Must initialize
-    double smallest_so_far = numeric_limits<double>::quiet_NaN();
-    double largest_so_far = numeric_limits<double>::quiet_NaN();
+    double dbl1, largest_so_far;
+
     // set up while statement
     while (true)
     {
@@ -26,8 +24,7 @@ int main()
         // set up conditions
         if (cin >> dbl1)
         {
-            // conditionals for "so far"
-            if (isnan(smallest_so_far) && isnan(largest_so_far))
+            if (dbl1)
             {
                 largest_so_far = dbl1;
                 cout
@@ -35,45 +32,22 @@ int main()
                     << "Smallest so far: " << '\n'
                     << "Largest so far: " << largest_so_far << '\n';
             }
-            else if ((dbl1 > largest_so_far && isnan(smallest_so_far)))
+            else if (dbl1 > largest_so_far)
             {
                 largest_so_far = dbl1;
-                cout
                     << "You entered: " << dbl1 << '\n'
                     << "Smallest so far: " << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
-            }
-            else if (dbl1 > largest_so_far && !isnan(smallest_so_far))
-            {
-                largest_so_far = dbl1;
-                cout
-                    << "You entered: " << dbl1 << '\n'
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
-            }
-            else if (dbl1 < largest_so_far && isnan(smallest_so_far))
-            {
-                smallest_so_far = dbl1;
-                cout
-                    << "You entered: " << dbl1 << '\n'
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
-            }
-            else if (dbl1 < smallest_so_far && !isnan(smallest_so_far))
-            {
-                smallest_so_far = dbl1;
-                cout
-                    << "You entered: " << dbl1 << '\n'
-                    << "Smallest so far: " << smallest_so_far << '\n'
                     << "Largest so far: " << largest_so_far << '\n';
             }
             else
             {
                 cout
                     << "You entered: " << dbl1 << '\n'
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
+                    << "The two values are equal \n";
             }
+            cout
+                << "Smallest so far: " << smallest_so_far << '\n'
+                << "Largest so far: " << largest_so_far << '\n';
         }
         else
         {
