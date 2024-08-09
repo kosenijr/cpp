@@ -27,9 +27,6 @@ int main()
         // set up conditions
         if (cin >> dbl1)
         {
-            cout
-            << "Min limits value: " << smallest_so_far << endl
-            << "Max limits value: " << largest_so_far << endl;
         }
         else
         {
