@@ -27,27 +27,20 @@ int main()
         // set up conditions
         if (cin >> dbl1)
         {
-            if (isnan(smallest_so_far) && isnan(largest_so_far))
-            {
+            if (isnan(smallest_so_far) && isnan(largest_so_far)) {
                 smallest_so_far = dbl1;
                 largest_so_far = dbl1;
-            }
-            else
-            {
+            } else {
                 // two conditions
-                if (dbl1 < smallest_so_far)
-                {
-                    smallest_so_far = dbl1;
-                }
-                if (dbl1 > largest_so_far)
-                {
-                    largest_so_far = dbl1;
-                }
+                if (dbl1 < smallest_so_far) smallest_so_far = dbl1;
+                if (dbl1 > largest_so_far) largest_so_far = db1;
+
             }
-            cout
-                << "You entered: " << dbl1 << '\n'
-                << "Smallest so far: " << smallest_so_far << '\n'
-                << "Largest so far: " << largest_so_far << '\n';
+         cout
+         << "You entered: " << dbl1 << '\n'
+         << "Smallest so far: " << smallest_so_far << '\n'
+         << "Largest so far: " << largest_so_far << '\n';
+
         }
         else
         {

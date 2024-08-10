@@ -41,7 +41,7 @@ int main()
                 }
                 if (dbl1 > largest_so_far)
                 {
-                    largest_so_far = dbl1;
+                    largest_so_far = db1;
                 }
             }
             cout
