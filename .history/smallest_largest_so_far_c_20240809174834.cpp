@@ -32,22 +32,22 @@ int main()
             {
                 largest_so_far = dbl1;
                 cout
-                    << "You entered: " << fixed << setprecision(2) << dbl1 << '\n'
-                    << "Largest so far: " << fixed << setprecision(2) << largest_so_far << '\n';
+                    << "You entered: " << dbl1 << '\n'
+                    << "Largest so far: " << largest_so_far << '\n';
             }
             else if ((dbl1 < largest_so_far && smallest_so_far == numeric_limits<double>::lowest()) || (dbl1 < smallest_so_far))
             {
                 smallest_so_far = dbl1;
                 cout
-                    << "You entered: " << fixed << setprecision(2) << dbl1 << '\n'
-                    << "Smallest so far: " << fixed << setprecision(2) << smallest_so_far << '\n';
+                    << "You entered: " << dbl1 << '\n'
+                    << "Smallest so far: " << smallest_so_far << '\n';
             }
             else
             {
                 cout
-                    << "You entered: " << fixed << setprecision(2) << dbl1 << '\n'
-                    << "Smallest so far: " << fixed << setprecision(2) << smallest_so_far << '\n'
-                    << "Largest so far: " << fixed << setprecision(2) << largest_so_far << '\n';
+                    << "You entered: " << dbl1 << '\n'
+                    << "Smallest so far: " << smallest_so_far << '\n'
+                    << "Largest so far: " << largest_so_far << '\n';
             }
         }
         else
