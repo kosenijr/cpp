@@ -25,9 +25,9 @@ int main()
         // prompt user for input
         cout << "Please enter a decimal or '|' to exit: \n";
         // set up conditions
-        if (cin >> dbl1 >> unit)
+        if (cin >> dbl1 >> string)
         {
-            cout << dbl1 << " " << unit << ". \n";
+            cout << dbl1 << string << '\n';
         }
         else
         {

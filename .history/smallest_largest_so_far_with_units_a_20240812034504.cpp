@@ -9,8 +9,7 @@ Assume conversion factors 1m == 100cm, 1in == 2.54cm, 1ft ==
 
 #include "std_lib_facilities.h"
 
-int main()
-{
+int main() {
     // declare objects
     char char1;
     double dbl1;
@@ -18,30 +17,24 @@ int main()
     // initialize objects
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
     double largest_so_far = numeric_limits<double>::quiet_NaN();
-
+    
     // set up while-statement
-    while (true)
-    {
+    while(true) {
         // prompt user for input
         cout << "Please enter a decimal or '|' to exit: \n";
         // set up conditions
-        if (cin >> dbl1 >> unit)
-        {
-            cout << dbl1 << " " << unit << ". \n";
+        if (cin >> double >> string) {
+            cout << double << string << '\n';
         }
-        else
-        {
+        else {
             // clear out standard input stream
             cin.clear();
             // change type for reading
             cin >> char1;
             // set up inner condition
-            if (char1 == '|')
-            {
+            if (char1 == '|') {
                 break;
-            }
-            else
-            {
+            } else {
                 cout << "Try again! \n";
             }
         }

@@ -27,7 +27,7 @@ int main()
         // set up conditions
         if (cin >> dbl1 >> unit)
         {
-            cout << dbl1 << " " << unit << ". \n";
+            cout << dbl1 << unit << '\n';
         }
         else
         {
