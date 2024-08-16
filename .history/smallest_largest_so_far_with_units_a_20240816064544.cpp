@@ -55,7 +55,7 @@ int main()
             }
             cout
             << "You entered: " << before_conversion << unit << ". \n"
-            << "Your conversion: " << fixed << setprecision(2) << after_conversion << unit << ". \n";
+            << "Your conversion: " << after_conversion << unit << ". \n";
         }
         else
         {

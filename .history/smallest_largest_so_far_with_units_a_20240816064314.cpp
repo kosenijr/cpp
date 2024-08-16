@@ -35,27 +35,36 @@ int main()
             // smallest and largest so far conditions with conversions
             if (unit == "m")
             {
+                cout
                 after_conversion = before_conversion;
+                    << "You entered: " << before_conversion << unit << ". \n"
+                    << "No conversion is needed. \n";
             }
             else if (unit == "cm")
             {
                 after_conversion = before_conversion / cm_rate;
+                cout
+                    << "You entered: " << before_conversion << unit << "\n"
+                    << "Your conversion: " << after_conversion << "m. \n";
             }
             else if (unit == "in")
             {
                 after_conversion = before_conversion * in_rate;
+                cout
+                    << "You entered: " << before_conversion << unit << "\n"
+                    << "Your conversion: " << after_conversion << "m. \n";
             }
             else if (unit == "ft")
             {
                 after_conversion = before_conversion * ft_rate;
+                cout
+                    << "You entered: " << before_conversion << unit << "\n"
+                    << "Your conversion: " << after_conversion << "m. \n";
             }
             else
             {
                 cout << "This measurement is unknown. Please use an available unit. \n";
             }
-            cout
-            << "You entered: " << before_conversion << unit << ". \n"
-            << "Your conversion: " << fixed << setprecision(2) << after_conversion << unit << ". \n";
         }
         else
         {
