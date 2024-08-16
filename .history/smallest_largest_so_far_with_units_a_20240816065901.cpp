@@ -58,30 +58,24 @@ int main()
             // << "Your conversion: " << fixed << setprecision(2) << after_conversion << unit << ". \n";
 
             // continue with smallest or largest so far
-            if (isnan(smallest_so_far) && isnan(largest_so_far))
-            {
+            if (isnan(smallest_so_far) && isnan(largest_so_far)) {
                 smallest_so_far = after_conversion;
                 largest_so_far = after_conversion;
-            }
-            else if (after_conversion < smallest_so_far)
-            {
+            } else if (after_conversion < smallest_so_far) {
                 smallest_so_far = after_conversion;
-            }
-            else if (after_conversion > largest_so_far)
-            {
+            } else if (after_conversion > largest_so_far) {
                 largest_so_far = after_conversion;
-            }
-            else
-            {
+            } else {
                 cout << "These values are equal. \n";
             }
 
             // check
             cout
-                << "You entered: " << before_conversion << unit << ". \n"
-                << "Your conversion: " << fixed << setprecision(2) << after_conversion << "m.\n"
-                << "Smallest so far: " << fixed << setprecision(2) << smallest_so_far << "m.\n"
-                << "Largest so far: " << fixed << setprecision(2) << largest_so_far << "m.\n";
+            << "You entered: " << before_conversion << unit << ". \n"
+            << "Your conversion: " << after_conversion << "m.\n"
+            << "Smallest so far: " << smallest_so_far << "m.\n"
+            << "Largest so far: " << largest_so_far << "m.\n";
+
         }
         else
         {
