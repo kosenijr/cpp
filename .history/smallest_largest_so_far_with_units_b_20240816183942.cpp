@@ -88,7 +88,7 @@ int main()
                 }
                 if (converted_dbl > largest_so_far)
                 {
-                    largest_so_far = converted_dbl;
+                    largest_so_far = converted_dbl
                 }
             }
 
@@ -115,8 +115,8 @@ int main()
                 cout << "Try again! \n";
             }
         }
+        return 0;
     }
-    return 0;
 }
 
 /*

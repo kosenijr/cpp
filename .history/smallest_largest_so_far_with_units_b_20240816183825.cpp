@@ -19,10 +19,6 @@ int main()
     bool first_entry = true;
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
     double largest_so_far = numeric_limits<double>::quiet_NaN();
-    // store conversion rates
-    double cm_rate = 100;
-    double in_rate = 2.54 / 100;
-    double ft_rate = 12 * (2.54 / 100);
 
     // set up while-statement
     while (true)
@@ -82,13 +78,11 @@ int main()
             else
             {
                 // inner conditions
-                if (converted_dbl < smallest_so_far)
-                {
+                if (converted_dbl < smallest_so_far) {
                     smallest_so_far = converted_dbl;
                 }
-                if (converted_dbl > largest_so_far)
-                {
-                    largest_so_far = converted_dbl;
+                if (converted_dbl > largest_so_far) {
+                    largest_so_far = converted_dbl
                 }
             }
 
@@ -115,8 +109,8 @@ int main()
                 cout << "Try again! \n";
             }
         }
+        return 0;
     }
-    return 0;
 }
 
 /*

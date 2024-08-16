@@ -19,10 +19,6 @@ int main()
     bool first_entry = true;
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
     double largest_so_far = numeric_limits<double>::quiet_NaN();
-    // store conversion rates
-    double cm_rate = 100;
-    double in_rate = 2.54 / 100;
-    double ft_rate = 12 * (2.54 / 100);
 
     // set up while-statement
     while (true)
@@ -73,23 +69,22 @@ int main()
             // << "Your conversion: " << fixed << setprecision(2) << converted_dbl << unit << ". \n";
 
             // continue with smallest or largest so far
-            if (first_entry)
+            if (isnan(smallest_so_far) && isnan(largest_so_far))
             {
                 smallest_so_far = converted_dbl;
                 largest_so_far = converted_dbl;
-                first_entry = false; // turn first_entry off
+            }
+            else if (converted_dbl < smallest_so_far)
+            {
+                smallest_so_far = converted_dbl;
+            }
+            else if (converted_dbl > largest_so_far)
+            {
+                largest_so_far = converted_dbl;
             }
             else
             {
-                // inner conditions
-                if (converted_dbl < smallest_so_far)
-                {
-                    smallest_so_far = converted_dbl;
-                }
-                if (converted_dbl > largest_so_far)
-                {
-                    largest_so_far = converted_dbl;
-                }
+                cout << "These values are equal. \n";
             }
 
             // check
@@ -115,11 +110,6 @@ int main()
                 cout << "Try again! \n";
             }
         }
+        return 0;
     }
-    return 0;
 }
-
-/*
-Notes
-- the utilization of 'continue' can be effective in a loop and there is a need to control the flow of the program by skipping to the next iteration.
-*/

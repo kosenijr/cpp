@@ -115,8 +115,8 @@ int main()
                 cout << "Try again! \n";
             }
         }
+        return 0;
     }
-    return 0;
 }
 
 /*
