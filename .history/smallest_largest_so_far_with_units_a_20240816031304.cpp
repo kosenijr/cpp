@@ -13,57 +13,37 @@ int main()
 {
     // declare objects
     char char1;
-    double before_conversion, after_conversion;
+    double dbl1;
     string unit;
     // initialize objects
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
     double largest_so_far = numeric_limits<double>::quiet_NaN();
-    // store conversion rates
-    double cm_rate = 100;
-    double in_rate = 2.54 / 100;
-    double ft_rate = 12 * (2.54 / 100);
+
     // set up while-statement
     while (true)
     {
         // prompt user for input
         cout << "Please enter a decimal or '|' to exit: \n";
         // set up conditions
-        if (cin >> before_conversion >> unit)
+        if (cin >> dbl1 >> unit)
         {
-            // Meters will be the final conversion unit
             // cout << dbl1 << " " << unit << ". \n";
             // smallest and largest so far conditions with conversions
-            if (unit == "m")
-            {
-                cout
-                    << "You entered: " << before_conversion << unit << ". \n"
-                    << "No conversion is needed. \n";
+            if (unit == "m") {
+                cout 
+                << "You entered: " << dbl1 << " " << unit << "\n"
+                << "No conversion is needed. \n";
             }
-            else if (unit == "cm")
-            {
-                after_conversion = before_conversion / cm_rate;
-                cout
-                    << "You entered: " << before_conversion << unit << "\n"
-                    << "Your conversion: " << after_conversion << "m. \n";
-            }
-            else if (unit == "in")
-            {
-                after_conversion = before_conversion * in_rate;
-                cout
-                    << "You entered: " << before_conversion << unit << "\n"
-                    << "Your conversion: " << after_conversion << "m. \n";
-            }
-            else if (unit == "ft")
-            {
-                after_conversion = before_conversion * ft_rate;
-                cout
-                    << "You entered: " << before_conversion << unit << "\n"
-                    << "Your conversion: " << after_conversion << "m. \n";
-            }
-            else
-            {
+            else if (unit == "cm") {
+
+            } else if (unit == "in") {
+
+            } else if (unit == "ft") {
+
+            } else {
                 cout << "This measurement is unknown. Please use an available unit. \n";
             }
+
         }
         else
         {

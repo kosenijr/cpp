@@ -20,8 +20,8 @@ int main()
     double largest_so_far = numeric_limits<double>::quiet_NaN();
     // store conversion rates
     double cm_rate = 100;
-    double in_rate = 2.54 / 100;
-    double ft_rate = 12 * (2.54 / 100);
+    double in_rate = 100 / 2.54;
+    double ft_rate = (100 / 2.54) * 12;
     // set up while-statement
     while (true)
     {
@@ -41,7 +41,7 @@ int main()
             }
             else if (unit == "cm")
             {
-                after_conversion = before_conversion / cm_rate;
+                after_conversion = before_conversion * cm_rate;
                 cout
                     << "You entered: " << before_conversion << unit << "\n"
                     << "Your conversion: " << after_conversion << "m. \n";

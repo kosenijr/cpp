@@ -21,7 +21,7 @@ int main()
     // store conversion rates
     double cm_rate = 100;
     double in_rate = 2.54 / 100;
-    double ft_rate = 12 * (2.54 / 100);
+    double ft_rate = (100 / 2.54) * 12;
     // set up while-statement
     while (true)
     {
