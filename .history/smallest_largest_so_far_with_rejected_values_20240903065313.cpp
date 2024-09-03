@@ -10,7 +10,7 @@ int main()
     // declare objects
     char char1;
     double unconverted_dbl, converted_dbl;
-    string unit = "";
+    string unit;
     // initialize objects
     bool first_entry = true;
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
@@ -61,6 +61,10 @@ int main()
             }
             else
             {
+                /*
+Reject values without units or with "illegal" representations of units,
+such as y, yard, meter, km, and gallons.
+*/
 
                 // inner condition
                 if (unit == "" || unit == "y" || unit == "yard" || unit == "meter" || unit == "km" || unit == "gallons")
