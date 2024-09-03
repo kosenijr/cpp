@@ -99,7 +99,7 @@ int main()
 
             // check
             cout
-                << "You entered: " << unconverted_dbl << " " << unit << ". \n"
+                << "You entered: " << unconverted_dbl << unit << ". \n"
                 << "Your conversion: " << fixed << setprecision(2) << converted_dbl << "m.\n"
                 << "Smallest so far: " << fixed << setprecision(2) << smallest_so_far << "m.\n"
                 << "Largest so far: " << fixed << setprecision(2) << largest_so_far << "m.\n";

@@ -63,7 +63,7 @@ int main()
             {
 
                 // inner condition
-                if (unit == "" || unit == "y" || unit == "yard" || unit == "yards" || unit == "meter" || unit == "km" || unit == "gallons")
+                if (unit == "" || unit == "y" || unit == "yard" || unit == "meter" || unit == "km" || unit == "gallons")
                 {
                     cout << "This unit is no good. Please use an accepted unit. \n";
                 }
