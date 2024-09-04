@@ -17,7 +17,7 @@ int main()
     double ft_to_m_conversion = (12 * 2.54) / 100.0;
 
     // set up while statement
-    while (true)
+    while ()
     {
         // prompt user for input
         cout << "Please enter a decimal or '|' to exit: \n";
