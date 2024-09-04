@@ -35,14 +35,12 @@ public:
 int main()
 {
     MyHonda MyHonda("Accord", 165000, "Goodrich Tires", "White", true);
-    cout
-        << MyHonda.Make << '\n'
-        << MyHonda.Miles << '\n'
-        << MyHonda.TypeOfTires << '\n'
-        << MyHonda.Color << '\n'
-        << MyHonda.isFourCylinder << '\n'
-        // << MyHonda.getSummary() << '\n'
-        << MyHonda.getSummary() << '\n';
-
+    cout 
+    << MyHonda.Make << '\n'
+    << MyHonda.Miles << '\n'
+    << MyHonda.TypeOfTires << '\n'
+    << MyHonda.Color << '\n'
+    << MyHonda.isFourCylinder << '\n'
+    << MyHonda.getSummary << '\n'
     return 0;
 }

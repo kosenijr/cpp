@@ -20,14 +20,14 @@ public:
             << "I cannot end this conversation without noting that the " << Make << " is " << Color << ". \n"
             << "And yes, it is " << isFourCylinder << " that this is a Four-Cylinder. \n";
     }
-    // set up constructor: no need for types and each entry of the body ends in semicolon
+    // set up constructor: no need for types
     MyHonda(string make, int miles, string typeoftires, string color, bool isfourcylinder)
     {
-        Make = make;
-        Miles = miles;
-        TypeOfTires = typeoftires;
-        Color = color;
-        isFourCylinder = isfourcylinder;
+        Make = make,
+        Miles = miles,
+        TypeOfTires = typeoftires,
+        Color = color,
+        isFourCylinder = isfourcylinder,
     }
 };
 
@@ -35,14 +35,7 @@ public:
 int main()
 {
     MyHonda MyHonda("Accord", 165000, "Goodrich Tires", "White", true);
-    cout
-        << MyHonda.Make << '\n'
-        << MyHonda.Miles << '\n'
-        << MyHonda.TypeOfTires << '\n'
-        << MyHonda.Color << '\n'
-        << MyHonda.isFourCylinder << '\n'
-        // << MyHonda.getSummary() << '\n'
-        << MyHonda.getSummary() << '\n';
+    cout << MyHonda.Make << '\n';
 
     return 0;
 }
