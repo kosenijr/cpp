@@ -38,11 +38,11 @@ int main()
     MyHonda.getSummary(); // does not need to be placed in the standard output stream
     // individually
     cout
-        << '\n'
         << MyHonda.Make << '\n'
         << MyHonda.Miles << '\n'
         << MyHonda.TypeOfTires << '\n'
         << MyHonda.Color << '\n'
         << MyHonda.isFourCylinder << '\n';
+        // << MyHonda.getSummary() << '\n';
     return 0;
 }

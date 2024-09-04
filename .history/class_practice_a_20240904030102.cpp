@@ -18,7 +18,7 @@ public:
             << "The " << Make << " has " << Miles << " miles in total. \n"
             << "Noticeably, you will see that the tires are " << TypeOfTires << ". \n"
             << "I cannot end this conversation without noting that the " << Make << " is " << Color << ". \n"
-            << "And yes, it is a Four-Cylinder. \n";
+            << "And yes, it is " << isFourCylinder << " that this is a Four-Cylinder. \n";
     }
     // set up constructor: no need for types and each entry of the body ends in semicolon
     MyHonda(string make, int miles, string typeoftires, string color, bool isfourcylinder)
@@ -38,11 +38,11 @@ int main()
     MyHonda.getSummary(); // does not need to be placed in the standard output stream
     // individually
     cout
-        << '\n'
         << MyHonda.Make << '\n'
         << MyHonda.Miles << '\n'
         << MyHonda.TypeOfTires << '\n'
         << MyHonda.Color << '\n'
         << MyHonda.isFourCylinder << '\n';
+        // << MyHonda.getSummary() << '\n';
     return 0;
 }

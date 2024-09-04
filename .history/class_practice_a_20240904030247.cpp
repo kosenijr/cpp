@@ -44,5 +44,6 @@ int main()
         << MyHonda.TypeOfTires << '\n'
         << MyHonda.Color << '\n'
         << MyHonda.isFourCylinder << '\n';
+    // << MyHonda.getSummary() << '\n';
     return 0;
 }
