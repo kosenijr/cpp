@@ -59,28 +59,28 @@ int main()
                 largest_so_far = chgd_dbl;
                 first_entry = false;
                 cout
-                    << "Smallest so far: " << smallest_so_far << "m \n"
-                    << "Largest so far: " << largest_so_far << "m \n";
+                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
             }
             else if (chgd_dbl < smallest_so_far)
             {
                 smallest_so_far = chgd_dbl;
                 cout
-                    << "Smallest so far: " << smallest_so_far << "m \n"
-                    << "Largest so far: " << largest_so_far << "m \n";
+                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
             }
             else if (chgd_dbl > largest_so_far)
             {
                 largest_so_far = chgd_dbl;
                 cout
-                    << "Smallest so far: " << smallest_so_far << "m \n"
-                    << "Largest so far: " << largest_so_far << "m \n";
+                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
             }
             else
             {
                 cout
-                    << "Smallest so far: " << smallest_so_far << "m \n"
-                    << "Largest so far: " << largest_so_far << "m \n";
+                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
             }
         }
         else

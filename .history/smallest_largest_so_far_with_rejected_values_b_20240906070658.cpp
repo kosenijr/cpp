@@ -23,8 +23,29 @@ int main()
         cout << "Please enter a decimal or '|' to exit: \n";
 
         // first inner condition: need for conversion
+        if (unit == "m")
+        {
+            // use init_dbl
+            chgd_dbl = init_dbl;
+        }
+        else if (unit = "cm")
+        {
+            chgd_dbl = init_dbl * cm_to_m_conversion;
+        }
+        else if (unit = "in")
+        {
+            chgd_dbl = init_dbl * in_to_m_conversion;
+        }
+        else if (unit = "ft")
+        {
+            chgd_dbl = init_dbl * ft_to_m_conversion;
+        }
+        else
+        {
+            cout << "This unit is unknown. Please try again. \n";
+        }
         // read into inputs by conditions
-        if (cin >> init_dbl >> unit)
+        if (cin >> chgd_dbl >> unit)
         {
             // send to the standard output stream
             // cout << "You entered: " << chgd_dbl << " " << unit << '\n';
@@ -32,55 +53,32 @@ int main()
             // inner condition: first entry/ smallest and largest so far
             if (first_entry)
             {
-
-                if (unit == "m")
-                {
-                    // use init_dbl
-                    chgd_dbl = init_dbl;
-                }
-                else if (unit == "cm")
-                {
-                    chgd_dbl = init_dbl * cm_to_m_conversion;
-                }
-                else if (unit == "in")
-                {
-                    chgd_dbl = init_dbl * in_to_m_conversion;
-                }
-                else if (unit == "ft")
-                {
-                    chgd_dbl = init_dbl * ft_to_m_conversion;
-                }
-                else
-                {
-                    cout << "This unit is unknown. Please try again. \n";
-                }
-
                 smallest_so_far = chgd_dbl;
                 largest_so_far = chgd_dbl;
                 first_entry = false;
                 cout
-                    << "Smallest so far: " << smallest_so_far << "m \n"
-                    << "Largest so far: " << largest_so_far << "m \n";
+                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
             }
             else if (chgd_dbl < smallest_so_far)
             {
                 smallest_so_far = chgd_dbl;
                 cout
-                    << "Smallest so far: " << smallest_so_far << "m \n"
-                    << "Largest so far: " << largest_so_far << "m \n";
+                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
             }
             else if (chgd_dbl > largest_so_far)
             {
                 largest_so_far = chgd_dbl;
                 cout
-                    << "Smallest so far: " << smallest_so_far << "m \n"
-                    << "Largest so far: " << largest_so_far << "m \n";
+                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
             }
             else
             {
                 cout
-                    << "Smallest so far: " << smallest_so_far << "m \n"
-                    << "Largest so far: " << largest_so_far << "m \n";
+                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
             }
         }
         else
