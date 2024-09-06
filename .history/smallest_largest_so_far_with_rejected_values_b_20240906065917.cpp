@@ -34,28 +34,28 @@ int main()
                 largest_so_far = init_dbl;
                 first_entry = false;
                 cout
-                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
-                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
+                    << "Smallest so far: " << smallest_so_far << " " << unit '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit '\n';
             }
             else if (init_dbl < smallest_so_far)
             {
                 smallest_so_far = init_dbl;
                 cout
-                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
-                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
+                    << "Smallest so far: " << smallest_so_far << " " << unit '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit '\n';
             }
             else if (init_dbl > largest_so_far)
             {
                 largest_so_far = init_dbl;
                 cout
-                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
-                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
+                    << "Smallest so far: " << smallest_so_far << " " << unit '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit '\n';
             }
             else
             {
                 cout
-                    << "Smallest so far: " << smallest_so_far << " " << unit << '\n'
-                    << "Largest so far: " << largest_so_far << " " << unit << '\n';
+                    << "Smallest so far: " << smallest_so_far << " " << unit '\n'
+                    << "Largest so far: " << largest_so_far << " " << unit '\n';
             }
         }
         else
