@@ -26,36 +26,12 @@ int main()
         {
             // send to the standard output stream
             // cout << "You entered: " << init_dbl << " " << unit << '\n';
-
+            
             // inner condition: first entry
-            if (first_entry)
-            {
-                smallest_so_far = init_dbl;
-                largest_so_far = init_dbl;
-                first_entry = false;
+            if (first_entry) {
                 cout
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
-            }
-            else if (init_dbl < smallest_so_far)
-            {
-                smallest_so_far = init_dbl;
-                cout
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
-            }
-            else if (init_dbl > largest_so_far)
-            {
-                largest_so_far = init_dbl;
-                cout
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
-            }
-            else
-            {
-                cout
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
+                << "Smallest so far: " << smallest_so_far << '\n'
+                << "Largest so far: " << largest_so_far << '\n';
             }
         }
         else

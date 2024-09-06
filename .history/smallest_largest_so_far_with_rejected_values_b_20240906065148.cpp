@@ -30,32 +30,10 @@ int main()
             // inner condition: first entry
             if (first_entry)
             {
-                smallest_so_far = init_dbl;
-                largest_so_far = init_dbl;
-                first_entry = false;
                 cout
                     << "Smallest so far: " << smallest_so_far << '\n'
                     << "Largest so far: " << largest_so_far << '\n';
-            }
-            else if (init_dbl < smallest_so_far)
-            {
-                smallest_so_far = init_dbl;
-                cout
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
-            }
-            else if (init_dbl > largest_so_far)
-            {
-                largest_so_far = init_dbl;
-                cout
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
-            }
-            else
-            {
-                cout
-                    << "Smallest so far: " << smallest_so_far << '\n'
-                    << "Largest so far: " << largest_so_far << '\n';
+                    first_entry = false;
             }
         }
         else
