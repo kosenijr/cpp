@@ -60,15 +60,15 @@ int main()
                 largest_so_far = chgd_dbl;
                 first_entry = false;
                 cout
-                    << "Smallest so far: " << smallest_so_far << meters
-                    << "Largest so far: " << largest_so_far << meters;
+                    << "Smallest so far: " << smallest_so_far << "m \n"
+                    << "Largest so far: " << largest_so_far << "m \n";
             }
             else if (chgd_dbl < smallest_so_far)
             {
                 smallest_so_far = chgd_dbl;
                 cout
-                    << "Smallest so far: " << smallest_so_far << meters
-                    << "Largest so far: " << largest_so_far << meters;
+                    << "Smallest so far: " << smallest_so_far << "m \n"
+                    << "Largest so far: " << largest_so_far << "m \n";
             }
             else if (chgd_dbl > largest_so_far)
             {

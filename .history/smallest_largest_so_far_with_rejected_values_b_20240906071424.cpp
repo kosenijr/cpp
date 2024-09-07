@@ -8,7 +8,6 @@ int main()
     string unit = "";
     // initialize a few objects
     bool first_entry = true;
-    string meters = "m \n";
     // using numeric limits
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
     double largest_so_far = numeric_limits<double>::quiet_NaN();
@@ -60,15 +59,15 @@ int main()
                 largest_so_far = chgd_dbl;
                 first_entry = false;
                 cout
-                    << "Smallest so far: " << smallest_so_far << meters
-                    << "Largest so far: " << largest_so_far << meters;
+                    << "Smallest so far: " << smallest_so_far << "m \n"
+                    << "Largest so far: " << largest_so_far << "m \n";
             }
             else if (chgd_dbl < smallest_so_far)
             {
                 smallest_so_far = chgd_dbl;
                 cout
-                    << "Smallest so far: " << smallest_so_far << meters
-                    << "Largest so far: " << largest_so_far << meters;
+                    << "Smallest so far: " << smallest_so_far << "m \n"
+                    << "Largest so far: " << largest_so_far << "m \n";
             }
             else if (chgd_dbl > largest_so_far)
             {
