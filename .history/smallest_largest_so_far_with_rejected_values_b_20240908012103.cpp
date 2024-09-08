@@ -22,14 +22,8 @@ int main()
         // prompt user for input
         cout << "Please enter a decimal or '|' to exit: \n";
 
-        // inner condition: smallest and largest so far
-        // read into inputs by conditions
-        if (cin >> init_dbl >> unit)
-        {
-            // send to the standard output stream
-            // cout << "You entered: " << chgd_dbl << " " << unit << '\n';
-
-                    if (unit == "m")
+        // first inner condition: unit conversion
+        if (unit == "m")
         {
             // use init_dbl
             chgd_dbl = init_dbl;
@@ -49,8 +43,14 @@ int main()
         else
         {
             cout << "This unit is unknown. Please try again. \n";
-            continue; // very important for the segue.
         }
+
+        // second inner condition: smallest and largest so far
+        // read into inputs by conditions
+        if (cin >> init_dbl >> unit)
+        {
+            // send to the standard output stream
+            // cout << "You entered: " << chgd_dbl << " " << unit << '\n';
 
             // inner condition: first entry/ smallest and largest so far
 

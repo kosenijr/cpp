@@ -49,8 +49,9 @@ int main()
         else
         {
             cout << "This unit is unknown. Please try again. \n";
-            continue; // very important for the segue.
+            continue;
         }
+
 
             // inner condition: first entry/ smallest and largest so far
 
