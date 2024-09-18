@@ -21,7 +21,7 @@ int main() {
         // user prompt
         cout 
         << "Please enter a decimal and unit or enter '|' to exit program: \n"
-        << "(Available units: m - meters, cm - centimeters, in - inches, and ft - feet) \n";
+        << "(The units available are m - meters, cm - centimeters, in - inches, and ft - feet). \n";
 
         // set up condition
         if (cin >> init_dbl >> unit) {
