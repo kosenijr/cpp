@@ -25,23 +25,8 @@ int main() {
 
         // set up condition
         if (cin >> init_dbl >> unit) {
-            cout << init_dbl << unit << '\n';
             
-        } else {
-            // clear out standard input stream
-            cin.clear();
-            // change the expected type for this input stream
-            cin >> char1;
-            // set up condition
-            if (char1 == '|') {
-                // exit
-                break;
-            } else {
-                cout << "You entered an incorrect character. Please try again."
-            }
         }
 
-    };
-
-    return 0;
+    }
 }
