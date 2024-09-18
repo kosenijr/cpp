@@ -5,8 +5,8 @@ int main()
     // declare a few objects
     char char1;
     double init_dbl, chgd_dbl;
-    // initialize a few objects
     string unit = "";
+    // initialize a few objects
     bool first_entry = true;
     // using numeric limits
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
@@ -20,7 +20,7 @@ int main()
     while (true)
     {
         // prompt user for input
-        cout << "Please enter a decimal with a unit or '|' to exit: \n";
+        cout << "Please enter a decimal or '|' to exit: \n";
 
         // inner condition: smallest and largest so far
         // read into inputs by conditions
@@ -57,7 +57,6 @@ int main()
                 else
                 {
                     cout << "This unit is unknown. Please try again. \n";
-                    continue;
                 }
             }
 

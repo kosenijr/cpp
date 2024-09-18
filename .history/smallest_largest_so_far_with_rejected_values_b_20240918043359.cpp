@@ -20,7 +20,7 @@ int main()
     while (true)
     {
         // prompt user for input
-        cout << "Please enter a decimal with a unit or '|' to exit: \n";
+        cout << "Please enter a decimal or '|' to exit: \n";
 
         // inner condition: smallest and largest so far
         // read into inputs by conditions

@@ -5,8 +5,8 @@ int main()
     // declare a few objects
     char char1;
     double init_dbl, chgd_dbl;
-    // initialize a few objects
     string unit = "";
+    // initialize a few objects
     bool first_entry = true;
     // using numeric limits
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
@@ -20,7 +20,7 @@ int main()
     while (true)
     {
         // prompt user for input
-        cout << "Please enter a decimal with a unit or '|' to exit: \n";
+        cout << "Please enter a decimal or '|' to exit: \n";
 
         // inner condition: smallest and largest so far
         // read into inputs by conditions
@@ -49,16 +49,9 @@ int main()
             else
             {
                 // inner condition
-                if (unit == "" || unit == "y" || unit == "yard" || unit == "yards" || unit == "meter" || unit == "meters" || unit == "km" || unit == "gallon" || unit == "gallons")
-                {
-                    cout << "This unit cannot be accepted. Please try again. \n";
-                    continue; // very important for the segue.
-                }
-                else
-                {
+                if (unit == "" ||)
                     cout << "This unit is unknown. Please try again. \n";
-                    continue;
-                }
+                continue; // very important for the segue.
             }
 
             // inner condition: first entry/ smallest and largest so far
@@ -71,21 +64,18 @@ int main()
             }
             else
             {
-                // inner conditions if not first_entry, use two if statements, not if-else statement
-                if (chgd_dbl < smallest_so_far)
+                // inner condition if not first_entry
+                if ()
                 {
-                    smallest_so_far = chgd_dbl;
                 }
-                if (chgd_dbl > largest_so_far)
-                {
-                    largest_so_far = chgd_dbl;
-                }
+                else
+                    () {}
             }
             cout
-                << "You entered: " << init_dbl << unit << ". \n"
-                << "Converted: " << chgd_dbl << "m. \n"
-                << "Smallest so far: " << smallest_so_far << "m. \n"
-                << "Largest so far: " << largest_so_far << "m. \n";
+                << "You entered: " << init_dbl << " " << unit << '\n'
+                << "Converted: " << dbl_dbl << "m \n"
+                << "Smallest so far: " << smallest_so_far << "m \n"
+                << "Largest so far: " << largest_so_far << "m \n";
         }
         else
         {
