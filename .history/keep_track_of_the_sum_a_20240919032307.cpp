@@ -50,9 +50,6 @@ int main()
                 cout << "This unit is not recognized. Please try again. \n";
                 continue;
             }
-            cout
-                << "You entered: " << init_dbl << unit << '\n'
-                << "Your conversion: " << chgd_dbl << "m \n";
         }
         else
         {
