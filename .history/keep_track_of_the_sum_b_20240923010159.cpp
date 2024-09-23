@@ -5,7 +5,7 @@ int main()
     // declarations
     char char1;
     double init_dbl, chgd_dbl;
-    vector<double> unsorted_values;
+    vector<double> unsorted_values, sorted_values;
 
     // initialize general objects
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
@@ -118,24 +118,19 @@ int main()
             if (char1 == '|')
             {
                 // unsorted values
-                cout
-                    << '\n'
-                    << "Values Unsorted \n";
                 for (double values : unsorted_values)
                 {
                     cout
-                        << values << '\n';
+                        << "Unsorted Values: " << values << '\n';
                 };
                 // sorted values
                 sort(unsorted_values);
                 // pushing sorted values into proper vector
-                cout
-                    << '\n'
-                    << "Values sorted \n";
+                sorted_values.push_back(...sort(unsorted_values)));
                 for (double values : unsorted_values)
                 {
                     cout
-                        << values << '\n';
+                        << "Sorted Values: " << values << '\n';
                 }
                 // exit
                 break;

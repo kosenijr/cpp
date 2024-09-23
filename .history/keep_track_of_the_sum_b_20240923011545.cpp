@@ -118,9 +118,8 @@ int main()
             if (char1 == '|')
             {
                 // unsorted values
-                cout
-                    << '\n'
-                    << "Values Unsorted \n";
+                cout << '\n'
+                     << "Values Unsorted: \n";
                 for (double values : unsorted_values)
                 {
                     cout
@@ -129,13 +128,11 @@ int main()
                 // sorted values
                 sort(unsorted_values);
                 // pushing sorted values into proper vector
-                cout
-                    << '\n'
-                    << "Values sorted \n";
+                cout << "Values sorted: \n";
                 for (double values : unsorted_values)
                 {
                     cout
-                        << values << '\n';
+                        << "Sorted Values: " << values << '\n';
                 }
                 // exit
                 break;

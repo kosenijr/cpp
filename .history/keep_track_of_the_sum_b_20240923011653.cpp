@@ -135,7 +135,7 @@ int main()
                 for (double values : unsorted_values)
                 {
                     cout
-                        << values << '\n';
+                        << "Sorted Values: " << values << '\n';
                 }
                 // exit
                 break;
