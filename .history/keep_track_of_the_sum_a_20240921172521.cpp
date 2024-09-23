@@ -117,20 +117,12 @@ int main()
             // set up condition
             if (char1 == '|')
             {
-                // unsorted values
+                // exit
                 for (double values : unsorted_values)
                 {
                     cout
                         << "Unsorted Values: " << values << '\n';
                 };
-                // sorted values
-                sort(unsorted_values);
-                for (double values : unsorted_values)
-                {
-                    cout
-                        << "Sorted Values: " << values << '\n';
-                }
-                // exit
                 break;
             }
             else

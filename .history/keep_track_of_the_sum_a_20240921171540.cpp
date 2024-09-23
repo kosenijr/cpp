@@ -96,6 +96,7 @@ int main()
 
             number_of_values++;
             unsorted_values.push_back(chgd_dbl);
+            sorted_values = sort(unsorted_values);
 
             // separate standard output stream for array: range-for-loop
             cout
@@ -107,6 +108,11 @@ int main()
                 << "Sum of Large Values: " << sum_of_large_values << '\n'
                 << "Sum of Values: " << sum_of_values << '\n'
                 << "Number of Values: " << number_of_values << '\n';
+            for (int values : unsorted_values)
+            {
+                cout
+                    << "Unsorted Values: " << values << '\n';
+            };
         }
         else
         {
@@ -117,19 +123,6 @@ int main()
             // set up condition
             if (char1 == '|')
             {
-                // unsorted values
-                for (double values : unsorted_values)
-                {
-                    cout
-                        << "Unsorted Values: " << values << '\n';
-                };
-                // sorted values
-                sort(unsorted_values);
-                for (double values : unsorted_values)
-                {
-                    cout
-                        << "Sorted Values: " << values << '\n';
-                }
                 // exit
                 break;
             }

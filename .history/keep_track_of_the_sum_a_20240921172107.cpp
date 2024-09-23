@@ -95,7 +95,7 @@ int main()
             }
 
             number_of_values++;
-            unsorted_values.push_back(chgd_dbl);
+       
 
             // separate standard output stream for array: range-for-loop
             cout
@@ -117,19 +117,6 @@ int main()
             // set up condition
             if (char1 == '|')
             {
-                // unsorted values
-                for (double values : unsorted_values)
-                {
-                    cout
-                        << "Unsorted Values: " << values << '\n';
-                };
-                // sorted values
-                sort(unsorted_values);
-                for (double values : unsorted_values)
-                {
-                    cout
-                        << "Sorted Values: " << values << '\n';
-                }
                 // exit
                 break;
             }
@@ -138,6 +125,13 @@ int main()
                 cout << "You entered an incorrect character. Please try again. \n";
             }
         }
+             unsorted_values.push_back(chgd_dbl);
+                         for (double values : unsorted_values)
+            {
+                cout
+                    << "Unsorted Values: " << unsorted_values << '\n';
+            };
+
     }
 
     return 0;

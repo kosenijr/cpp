@@ -5,7 +5,8 @@ int main()
     // declarations
     char char1;
     double init_dbl, chgd_dbl;
-    vector<double> unsorted_values, sorted_values;
+    vector<double> unsorted_values;
+    vector<double> sorted_values;
 
     // initialize general objects
     double smallest_so_far = numeric_limits<double>::quiet_NaN();
@@ -107,6 +108,11 @@ int main()
                 << "Sum of Large Values: " << sum_of_large_values << '\n'
                 << "Sum of Values: " << sum_of_values << '\n'
                 << "Number of Values: " << number_of_values << '\n';
+            for (int values : unsorted_values)
+            {
+                cout
+                    << "Unsorted Values: " << values << '\n';
+            };
         }
         else
         {
@@ -117,19 +123,6 @@ int main()
             // set up condition
             if (char1 == '|')
             {
-                // unsorted values
-                for (double values : unsorted_values)
-                {
-                    cout
-                        << "Unsorted Values: " << values << '\n';
-                };
-                // sorted values
-                sort(unsorted_values);
-                for (double values : unsorted_values)
-                {
-                    cout
-                        << "Sorted Values: " << values << '\n';
-                }
                 // exit
                 break;
             }

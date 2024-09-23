@@ -96,6 +96,7 @@ int main()
 
             number_of_values++;
             unsorted_values.push_back(chgd_dbl);
+            
 
             // separate standard output stream for array: range-for-loop
             cout
@@ -122,13 +123,13 @@ int main()
                 {
                     cout
                         << "Unsorted Values: " << values << '\n';
+
                 };
                 // sorted values
-                sort(unsorted_values);
-                for (double values : unsorted_values)
-                {
+                for (double values : unsorted_values) {
+                    sort(unsorted_values);
                     cout
-                        << "Sorted Values: " << values << '\n';
+                    << "Sorted Values: " << values << '\n';
                 }
                 // exit
                 break;
