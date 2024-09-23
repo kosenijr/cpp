@@ -17,10 +17,3 @@ int main()
 
     return 0;
 }
-
-
-/*
-Note
-- Any type of input might be considered a string.
-- Ctrl + Z (Windows) or Ctrl + D (Unix) out of the program.
-*/

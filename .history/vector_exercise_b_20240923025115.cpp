@@ -10,17 +10,9 @@ int main()
         words.push_back(word);
     }
     // check out array
-    for (int i = 0; i < words.size(); ++i)
-    {
+    for (int i = 0; i < words.size(); ++i) {
         cout << i << '\t' << words[i] << '\n';
     }
 
     return 0;
 }
-
-
-/*
-Note
-- Any type of input might be considered a string.
-- Ctrl + Z (Windows) or Ctrl + D (Unix) out of the program.
-*/
