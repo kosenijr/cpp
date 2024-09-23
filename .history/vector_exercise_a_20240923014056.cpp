@@ -34,7 +34,7 @@ int main()
             cout << values << '\n';
         }
         // bool
-        vb.push_back(true); // included 1 at the end of bool vector.
+        vb[19] = false;
         cout << "bool \n";
         for (bool values:vb) {
             cout << values << '\n';

@@ -24,28 +24,22 @@ int main()
 
         // check out the elements of each vector
         // int
-        cout << "int \n";
         for (int values:vi) {
             cout << values << '\n';
         }
         // string
-        cout << "string \n";
         for (string values:vs) {
             cout << values << '\n';
         }
         // bool
-        vb.push_back(true); // included 1 at the end of bool vector.
-        cout << "bool \n";
         for (bool values:vb) {
             cout << values << '\n';
         }
         // double
-        cout << "double \n";
         for (double values:vd) {
-            cout << fixed << setprecision(2) << values << '\n';
+            cout << values << '\n';
         }
         // int
-        cout << "number_expected \n";
         for (int values:number_expected) {
             cout << values << '\n';
         }
