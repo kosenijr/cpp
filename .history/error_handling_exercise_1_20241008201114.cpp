@@ -21,7 +21,7 @@ int main()
                 << "You entered: " << fixed << setprecision(1) << dbl1 << '\n';
         }
 
-        if (cin.fail()) // can use "!cin" or "cin.fail()".
+        if (!cin)
         {
             cin.clear();
             cin >> char1;
