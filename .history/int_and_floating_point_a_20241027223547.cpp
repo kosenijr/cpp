@@ -75,8 +75,3 @@ int main()
 
     return 0;
 }
-
-/*
-Notes
-- modulus (%) operator can only be used for integers, not decimals.
-*/

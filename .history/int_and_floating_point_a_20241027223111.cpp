@@ -7,18 +7,18 @@ int main()
     double c = 63.18;
     int d = 5;
 
-    // MAKE SURE TO USE PARENTHESES!!!
+// MAKE SURE TO USE PARENTHESES!!!
     // operators that do not work between two integers
-    // cout << "two ints \n";
-    // cout << (a == d) << '\n';
-    // cout << (a != d) << '\n';
-    // cout << (a < d) << '\n';
-    // cout << (a > d) << '\n';
+        // cout << "two ints \n";
+    cout << (a == d) << '\n';
+    cout << (a != d) << '\n';
+    cout << (a < d) << '\n';
+    cout << (a > d) << '\n';
 
     cout << '\n';
 
     // operators that do not work between integers and floats
-    cout << "int/float \n";
+    // cout << "int/float \n";
     // cout << (a == b) << '\n';
     // cout << (a != b) << '\n';
     // cout << (a < b) << '\n';
@@ -27,11 +27,11 @@ int main()
     cout << '\n';
 
     // operators that do not work between two floats
-    cout << "two floats \n";
-    cout << (b == c) << '\n';
-    cout << (b != c) << '\n';
-    cout << (b < c) << '\n';
-    cout << (b > c) << '\n';
+    // cout << "two floats \n";
+    // cout << (b == c) << '\n';
+    // cout << (b != c) << '\n';
+    // cout << (b < c) << '\n';
+    // cout << (b > c) << '\n';
 
     cout << '\n';
 
@@ -45,7 +45,7 @@ int main()
     cout << '\n';
 
     // operators that work between integers and floats
-    // cout << "int/float \n";
+        // cout << "int/float \n";
     // cout << a - b << '\n';
     // cout << a + b << '\n';
     // cout << a * b << '\n';
@@ -54,29 +54,24 @@ int main()
     cout << '\n';
 
     // operators that work between two floats
-    // cout << "two floats \n";
+        // cout << "two floats \n";
     // cout << b - c << '\n';
     // cout << b + c << '\n';
     // cout << b * c << '\n';
     // cout << b / c << '\n';
 
     // operators that work on integers but not on floats
-    // cout << "int \n";
+        // cout << "int \n";
     // cout << ++a << '\n'; // works
     // cout << --a << '\n'; // works
-    cout << a % d << '\n'; // works
 
     cout << '\n';
 
-    // cout << "float \n";
+        // cout << "float \n";
     // cout << ++b << '\n'; // works
     // cout << --b << '\n'; // works
-    // cout << b % c << '\n'; // does not work
+
+
 
     return 0;
 }
-
-/*
-Notes
-- modulus (%) operator can only be used for integers, not decimals.
-*/

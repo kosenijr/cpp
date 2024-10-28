@@ -63,20 +63,16 @@ int main()
     // operators that work on integers but not on floats
     // cout << "int \n";
     // cout << ++a << '\n'; // works
-    // cout << --a << '\n'; // works
-    cout << a % d << '\n'; // works
+    cout << --a << '\n'; // works
+      cout << a % d << '\n'; // works
 
     cout << '\n';
 
     // cout << "float \n";
     // cout << ++b << '\n'; // works
     // cout << --b << '\n'; // works
-    // cout << b % c << '\n'; // does not work
+        cout << b % c << '\n'; // does not work
+
 
     return 0;
 }
-
-/*
-Notes
-- modulus (%) operator can only be used for integers, not decimals.
-*/

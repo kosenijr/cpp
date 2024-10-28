@@ -78,5 +78,5 @@ int main()
 
 /*
 Notes
-- modulus (%) operator can only be used for integers, not decimals.
+- modulus (%) operator can only be used for integers.
 */

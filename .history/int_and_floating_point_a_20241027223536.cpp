@@ -71,12 +71,7 @@ int main()
     // cout << "float \n";
     // cout << ++b << '\n'; // works
     // cout << --b << '\n'; // works
-    // cout << b % c << '\n'; // does not work
+    cout << b % c << '\n'; // does not work
 
     return 0;
 }
-
-/*
-Notes
-- modulus (%) operator can only be used for integers, not decimals.
-*/

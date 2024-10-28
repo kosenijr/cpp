@@ -19,19 +19,19 @@ int main()
 
     // operators that do not work between integers and floats
     cout << "int/float \n";
-    // cout << (a == b) << '\n';
-    // cout << (a != b) << '\n';
-    // cout << (a < b) << '\n';
-    // cout << (a > b) << '\n';
+    cout << (a == b) << '\n';
+    cout << (a != b) << '\n';
+    cout << (a < b) << '\n';
+    cout << (a > b) << '\n';
 
     cout << '\n';
 
     // operators that do not work between two floats
-    cout << "two floats \n";
-    cout << (b == c) << '\n';
-    cout << (b != c) << '\n';
-    cout << (b < c) << '\n';
-    cout << (b > c) << '\n';
+    // cout << "two floats \n";
+    // cout << (b == c) << '\n';
+    // cout << (b != c) << '\n';
+    // cout << (b < c) << '\n';
+    // cout << (b > c) << '\n';
 
     cout << '\n';
 
@@ -64,19 +64,12 @@ int main()
     // cout << "int \n";
     // cout << ++a << '\n'; // works
     // cout << --a << '\n'; // works
-    cout << a % d << '\n'; // works
 
     cout << '\n';
 
     // cout << "float \n";
     // cout << ++b << '\n'; // works
     // cout << --b << '\n'; // works
-    // cout << b % c << '\n'; // does not work
 
     return 0;
 }
-
-/*
-Notes
-- modulus (%) operator can only be used for integers, not decimals.
-*/
