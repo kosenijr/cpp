@@ -5,7 +5,7 @@ int main()
     // constant expression
     string genesis = "The first book";
     string exodus = "The second book";
-    constexpr char* leviticus = "The third book";
+    constexpr char *leviticus = "The third book";
 
     // for-range loop
     for (char x : genesis)
@@ -24,7 +24,7 @@ int main()
     //     cout << "Each letter: " << genesis[i] << '\n';
     // }
 
-    cout << leviticus << '\n';
+    cout << leviticus.size() << '\n';
 
     return 0;
 }

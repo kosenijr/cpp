@@ -12,19 +12,16 @@ int main()
     {
         cout << "Each letter: " << x << '\n';
     }
-    cout << '\n';
-    for (auto y : exodus)
+cout << '\n';
+        for (auto y : exodus)
     {
         cout << "Each letter: " << y << '\n';
     }
-    cout << '\n';
+cout << '\n';
     // output stream: constant expression
-    // for (int i = 0; i < leviticus; ++i)
-    // {
-    //     cout << "Each letter: " << genesis[i] << '\n';
-    // }
-
-    cout << leviticus << '\n';
+    for (int i = 0; i < leviticus.size(); ++i) {
+        cout << "Each letter: " << genesis[i] << '\n';
+    }
 
     return 0;
 }

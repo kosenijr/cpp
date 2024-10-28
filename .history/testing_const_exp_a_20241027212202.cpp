@@ -5,7 +5,7 @@ int main()
     // constant expression
     string genesis = "The first book";
     string exodus = "The second book";
-    constexpr char* leviticus = "The third book";
+    char* leviticus = "The third book";
 
     // for-range loop
     for (char x : genesis)
